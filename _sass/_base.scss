@@ -1,1 +1,23 @@
-// TODO: Add styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $body-color;
+  color: $text-color;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+  color: $text-color;
+}
+
+.container {
+  max-width: $desktop-breakpoint;
+  margin: 0 auto;
+  padding: 50px $global-horizontal-padding 0;
+}
