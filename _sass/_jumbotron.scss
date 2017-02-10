@@ -1,0 +1,26 @@
+.jumbotron {
+  margin: 0 auto;
+  color: #FFF;
+  box-shadow: 0 15px 30px $shadow-color;
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px 80px;
+  background-image: url('/assets/jumbotron-background.jpg');
+  background-size: cover;
+  background-position: 0 50%;
+
+  .headline,
+  .subtitle {
+    text-shadow: 0 5px 15px $shadow-color;
+    font-weight: 300;
+  }
+
+  .headline {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+}

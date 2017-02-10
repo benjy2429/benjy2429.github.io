@@ -11,11 +11,11 @@
 
   .logo {
     float: left;
-    line-height: $nav-height;
+    line-height: $header-height;
 
     a {
       display: inline-block;
-      height: $nav-height;
+      height: $header-height;
       padding: 0 $global-horizontal-padding;
       text-decoration: none;
       transition: box-shadow 0.3s, color 0.3s;
@@ -37,7 +37,7 @@
     ul > li > a {
       display: block;
       padding: 0 $global-horizontal-padding;
-      line-height: $nav-height;
+      line-height: $header-height;
       text-decoration: none;
       transition: all 0.3s;
 
