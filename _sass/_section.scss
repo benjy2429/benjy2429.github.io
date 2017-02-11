@@ -1,0 +1,59 @@
+$sidebar-width: 250px;
+$spacing: 50px;
+
+.section {
+  clear: both;
+  line-height: 30px;
+
+  .sidebar,
+  .content {
+    float: left;
+    vertical-align: top;
+    padding: 30px 0;
+    font-weight: 300;
+  }
+
+  .sidebar {
+    width: $sidebar-width;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-right: $spacing;
+  }
+
+  .content {
+    width: $container-width - $sidebar-width - $spacing;
+    border-left: 1px solid $shadow-color;
+    padding-left: $spacing;
+    font-size: 18px;
+    position: relative;
+
+    .point {
+      position: absolute;
+      top: 35px;
+      left: -10px;
+      background-color: #7a74de;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      box-sizing: content-box;
+      border: 5px solid $body-color;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .project {
+      text-align: center;
+      margin: 40px auto;
+
+      a {
+        border: 1px solid $shadow-color;
+        padding: 10px 15px;
+        text-decoration: none;
+      }
+    }
+  }
+}

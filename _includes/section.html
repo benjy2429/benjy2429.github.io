@@ -1,0 +1,19 @@
+{% assign data=include.data_file %}
+<section class="section">
+  <aside class="sidebar">{{ data.section_title }}</aside>
+
+  <article class="content">
+    <div class="point"></div>
+    {% for element in data.content %}
+
+      {% if element.type == 'project' %}
+        <div class="project">
+          <a href="{{ element.href }}">Find out more about {{ element.title }}</a>
+        </div>
+      {% else %}
+        <p>{{ element.text }}</p>
+      {% endif %}
+
+    {% endfor %}
+  </article>
+</section>

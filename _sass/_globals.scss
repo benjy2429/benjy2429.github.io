@@ -3,8 +3,9 @@ $global-horizontal-padding: 20px;
 
 $mobile-breakpoint: 500px;
 $desktop-breakpoint: 1024px;
+$container-width: $desktop-breakpoint - ($global-horizontal-padding * 2);
 
 $text-color: #666;
 $header-color: #FFF;
-$body-color: #272727;
+$body-color: #EEE;
 $shadow-color: rgba(0, 0, 0, 0.2);

@@ -1,8 +1,38 @@
 ---
-layout: default
 ---
+<!doctype html>
 
-<div class="jumbotron">
-  <h1 class="headline">Hello, I'm Ben</h1>
-  <h2 class="subtitle">Software Developer</h2>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- {% include header.html %} -->
+
+    <main class="container">
+
+      <div class="jumbotron">
+        <h1 class="headline">Hi, I'm Ben.</h1>
+        <h2 class="subtitle">Software Developer</h2>
+      </div>
+
+      {% include section.html data_file=site.data.now %}
+      {% include section.html data_file=site.data.education %}
+
+      {% include footer.html %}
+    </main>
+
+  </body>
+</html>
+
+
