@@ -33,7 +33,7 @@ $spacing: 50px;
       position: absolute;
       top: 35px;
       left: -10px;
-      background-color: #7a74de;
+      background-color: $highlight-color;
       width: 10px;
       height: 10px;
       border-radius: 10px;
@@ -45,7 +45,7 @@ $spacing: 50px;
       margin-bottom: 30px;
     }
 
-    .project {
+    .project-link {
       text-align: center;
       margin: 40px auto;
 
@@ -53,6 +53,12 @@ $spacing: 50px;
         border: 1px solid $shadow-color;
         padding: 10px 15px;
         text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+          border-color: transparent;
+          box-shadow: 0 5px 15px $shadow-color;
+        }
       }
     }
   }

@@ -7,7 +7,7 @@
     {% for element in data.content %}
 
       {% if element.type == 'project' %}
-        <div class="project">
+        <div class="project-link">
           <a href="{{ element.href }}">Find out more about {{ element.title }}</a>
         </div>
       {% else %}

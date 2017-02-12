@@ -1,0 +1,9 @@
+---
+section_title: Open Source
+content:
+  -
+    type: project
+    title: CircleCI Build Monitor
+    image:
+    text: A simple Ruby on Rails build monitor app for CircleCI projects.
+    link: https://github.com/benjy2429/circleci-build-monitor
