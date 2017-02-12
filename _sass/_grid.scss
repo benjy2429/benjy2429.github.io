@@ -1,0 +1,36 @@
+$max-columns: 12;
+$margin: 1.6%;
+$single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
+
+.row,
+.col {
+  box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.col {
+  position: relative;
+  float: left;
+}
+
+.col + .col {
+    margin-left: $margin;
+}
+
+@for $i from 1 through $max-columns {
+
+  $column-width: ($single-column-width * $i) + ($margin * ($i - 1));
+
+  .col-#{$i} {
+    width: $column-width;
+  }
+}
