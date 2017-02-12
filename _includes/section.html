@@ -1,21 +1,24 @@
 {% assign data=include.data_file %}
 <section class="section">
-  <aside class="sidebar">
-    <h2>{{ data.section_title }}</h2>
-  </aside>
 
-  <article class="content">
-    <div class="point"></div>
-    {% for element in data.content %}
+  <div class="row">
+    <div class="sidebar col col-4">
+      <h2>{{ data.section_title }}</h2>
+    </div>
 
-      {% if element.type == 'project' %}
-        <div class="project-link">
-          <a href="{{ element.href }}">Find out more about {{ element.title }}</a>
-        </div>
-      {% else %}
-        <p>{{ element.text }}</p>
-      {% endif %}
+    <div class="content col col-8">
+      <div class="point"></div>
+      {% for element in data.content %}
 
-    {% endfor %}
-  </article>
+        {% if element.type == 'project' %}
+          <div class="project-link">
+            <a href="{{ element.href }}">Find out more about {{ element.title }}</a>
+          </div>
+        {% else %}
+          <p>{{ element.text }}</p>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+  </div>
 </section>
