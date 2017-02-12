@@ -1,0 +1,19 @@
+{% assign data=include.data_file %}
+
+<section class="projects">
+  <div class="container">
+
+    <h2>Projects</h2>
+
+    <div class="row">
+
+      {% for project in data.projects %}
+      <article class="project col col-4">
+        <h3 class="project-title">{{ project.title }}</h3>
+      </article>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+

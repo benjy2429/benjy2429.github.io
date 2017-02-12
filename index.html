@@ -2,13 +2,18 @@
 layout: default
 ---
 
-<div class="jumbotron">
-  <h1 class="headline">Hi, I'm Ben.</h1>
-  <h2 class="subtitle">Software Developer</h2>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="headline">Hi, I'm Ben.</h1>
+    <h2 class="subtitle">Software Developer</h2>
+  </div>
 </div>
 
-{% include section.html data_file=site.data.work %}
-{% include section.html data_file=site.data.education %}
-{% include section.html data_file=site.data.open_source %}
+<div class="container">
+  {% include section.html data_file=site.data.work %}
+  {% include section.html data_file=site.data.education %}
+</div>
+
+{% include projects.html data_file=site.data.projects %}
 
 {% include footer.html %}

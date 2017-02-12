@@ -1,3 +1,9 @@
+/*
+ * Grid system
+ *
+ * Adapted from https://www.sitepoint.com/understanding-css-grid-systems/
+ */
+
 $max-columns: 12;
 $margin: 1.6%;
 $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
@@ -20,10 +26,8 @@ $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
 .col {
   position: relative;
   float: left;
-}
-
-.col + .col {
-    margin-left: $margin;
+  margin-bottom: $margin;
+  margin-right: $margin;
 }
 
 @for $i from 1 through $max-columns {
@@ -32,5 +36,11 @@ $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
 
   .col-#{$i} {
     width: $column-width;
+  }
+
+  $nth-expression: $max-columns / $i;
+
+  .col-#{$i}:nth-of-type(#{$nth-expression}n) {
+    margin-right: 0;
   }
 }

@@ -15,18 +15,22 @@ $spacing: 50px;
 
   .sidebar {
     width: $sidebar-width;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
     text-align: right;
     margin-right: $spacing;
+
+    h2 {
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
   }
 
   .content {
     width: $container-width - $sidebar-width - $spacing;
     border-left: 1px solid $shadow-color;
     padding-left: $spacing;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
 
     .point {

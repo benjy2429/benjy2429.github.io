@@ -1,0 +1,30 @@
+.projects {
+  clear: both;
+  background-color: $body-color-dark;
+  padding-bottom: 50px;
+
+  h2 {
+    text-align: center;
+    text-shadow: 0 5px 15px $shadow-color;
+    color: #FFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .project {
+    height: 300px;
+    background-color: #FFF;;
+    box-shadow: 0 15px 30px $shadow-color;
+    text-align: center;
+    padding: 20px;
+
+    .project-title {
+      margin-top: 40%;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+  }
+}

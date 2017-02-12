@@ -1,9 +1,12 @@
 ---
-section_title: Open Source
-content:
+projects:
   -
-    type: project
     title: CircleCI Build Monitor
     image:
     text: A simple Ruby on Rails build monitor app for CircleCI projects.
     link: https://github.com/benjy2429/circleci-build-monitor
+  -
+    title: Dissertation
+    image:
+    text: A real-time shadow puppet storytelling application using Microsoft’s Kinect sensor and C++.
+    link:
