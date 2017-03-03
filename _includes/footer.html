@@ -1,3 +1,12 @@
+{% assign social_links=site.data.social_links %}
+
 <footer class="footer">
-  <p>&copy; 2017</p>
+  <ul class="social-links">
+    {% for link in social_links %}
+      <li>
+        <a href="{{ link.href }}">{{ link.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p>&copy; {{ site.time | date: '%Y' }} | Ben Carr</p>
 </footer>

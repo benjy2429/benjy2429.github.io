@@ -4,9 +4,30 @@ projects:
     title: CircleCI Build Monitor
     image:
     text: A simple Ruby on Rails build monitor app for CircleCI projects.
-    link: https://github.com/benjy2429/circleci-build-monitor
+    link:
+      text: View on GitHub
+      href: https://github.com/benjy2429/circleci-build-monitor
+  -
+    title: Tribe Whiteboard
+    image:
+    text: A digital whiteboard built with ReactJS to manage development squads and employees.
   -
     title: Dissertation
     image:
-    text: A real-time shadow puppet storytelling application using Microsoft’s Kinect sensor and C++.
+    text: A real-time shadow puppet storytelling application using a Kinect sensor and C++.
+    file: Dissertation_Ben_Carr.pdf
+  -
+    title: Social Sheffield
+    image:
+    text: A search tool designed to help you find events and activities to do around Sheffield.
     link:
+      text: Visit site
+      href: http://www.socialsheffield.net
+  -
+    title: Academicus
+    image:
+    text: A Swift app that allows students to track their academic progress and achievements.
+  -
+    title: London Power Tunnels
+    image:
+    text: A system built for engineering firm Costain to monitor trains within underground tunnels.

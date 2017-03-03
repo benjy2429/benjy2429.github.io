@@ -3,13 +3,24 @@
 <section class="projects">
   <div class="container">
 
-    <h2>Projects</h2>
+    <h2 class="heading">Projects</h2>
+    <p class="subtitle">These are some of the projects I've worked on, both at university and in my spare time.</p>
 
     <div class="row">
 
       {% for project in data.projects %}
-      <article class="project col col-4">
+      <article class="col col-4 project project-{{ project.title | slugify }}">
+        <div class="project-image">
+          <img src="{{ project.image }}" />
+        </div>
         <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.text }}</p>
+        {% if project.link %}
+          <a class="project-link" href="{{ project.link.href }}">{{ project.link.text }}</a>
+        {% endif %}
+        {% if project.file %}
+          <a class="project-link" href="{{ site.url }}/download/{{ project.file }}">Download</a>
+        {% endif %}
       </article>
       {% endfor %}
 
