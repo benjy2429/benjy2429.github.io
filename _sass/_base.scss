@@ -29,3 +29,19 @@ a:hover {
   margin: 0 auto 50px;
   padding: 0 $global-horizontal-padding;
 }
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  // color: #BBB;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}

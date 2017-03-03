@@ -1,0 +1,25 @@
+{
+  "name": "benjy2429.github.io",
+  "version": "0.0.1",
+  "description": "Personal website for Ben Carr",
+  "repository": {
+    "url": "https://github.com/benjy2429/benjy2429.github.io.git",
+    "type": "git"
+  },
+  "author": "Ben Carr",
+  "license": "MIT",
+  "scripts": {
+    "lint": "stylelint _sass/*.scss"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}

@@ -12,21 +12,11 @@ $project-colors: (
   padding: 50px 0;
 
   .heading {
-    text-align: center;
-    text-shadow: 0 5px 15px $shadow-color;
-    color: #FFF;
-    font-size: 28px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin-bottom: 20px;
+    color: #fff;
   }
 
   .subtitle {
-    text-align: center;
-    color: #BBB;
-    margin-bottom: 50px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    color: #bbb;
   }
 
   .project {
@@ -37,20 +27,20 @@ $project-colors: (
     .project-image {
       height: 150px;
       display: block;
-      background-color: #FFF;
+      background-color: #fff;
       box-shadow: 0 15px 30px $shadow-color;
       margin-bottom: 20px;
     }
 
     .project-title {
-      color: #FFF;
+      color: #fff;
       letter-spacing: 1px;
       font-weight: 400;
       margin-bottom: 15px;
     }
 
     .project-description {
-      color: #BBB;
+      color: #bbb;
       font-weight: 300;
       margin-bottom: 25px;
     }
@@ -58,8 +48,8 @@ $project-colors: (
     .project-link {
       font-size: 14px;
       padding: 5px 10px;
-      color: #FFF;
-      border: 1px solid #FFF;
+      color: #fff;
+      border: 1px solid #fff;
       transition: all 0.3s;
 
       &:hover {

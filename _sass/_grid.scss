@@ -13,13 +13,13 @@ $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
   box-sizing: border-box;
 }
 
-.row:before,
-.row:after {
+.row::before,
+.row::after {
   content: " ";
   display: table;
 }
 
-.row:after {
+.row::after {
   clear: both;
 }
 
