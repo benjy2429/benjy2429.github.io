@@ -1,11 +1,3 @@
-$project-colors: (
-  circleci-build-monitor: #42c88a,
-  dissertation: #dec398,
-  social-sheffield: #e79623,
-  academicus: #7a6190,
-  london-power-tunnels: #225b90
-);
-
 .projects {
   clear: both;
   background-color: $body-color-dark;
@@ -58,11 +50,5 @@ $project-colors: (
         box-shadow: 0 5px 15px $shadow-color;
       }
     }
-
-    // @each $name, $color in $project-colors {
-    //   &-#{$name}:hover {
-    //     background-color: $color;
-    //   }
-    // }
   }
 }

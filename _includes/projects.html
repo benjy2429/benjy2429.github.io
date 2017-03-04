@@ -9,8 +9,8 @@
     <div class="row">
 
       {% for project in data.projects %}
-      <article class="col col-4 project project-{{ project.title | slugify }}">
-        <img class="project-image" src="{{ site.url }}/assets/projects/{{ project.image }}" />
+      <article class="col col-4 project">
+        <img class="project-image" src="{{ site.url }}/assets/projects/{{ project.image }}" alt="" />
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-description">{{ project.text }}</p>
         {% if project.link %}
