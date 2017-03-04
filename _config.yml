@@ -12,6 +12,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - yarn.lock
+  - node_modules
 sass:
   sass_dir: _sass
   style: compressed

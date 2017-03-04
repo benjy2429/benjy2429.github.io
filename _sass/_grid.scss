@@ -42,6 +42,10 @@ $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
     width: $column-width;
   }
 
+  .col-push-#{$i} {
+    left: $column-width;
+  }
+
   $nth-expression: $max-columns / $i;
 
   .col-#{$i}:nth-of-type(#{$nth-expression}n) {
