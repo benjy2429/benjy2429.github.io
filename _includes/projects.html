@@ -1,6 +1,6 @@
 {% assign data=include.data_file %}
 
-<section class="projects">
+<section class="projects section-dark">
   <div class="container">
 
     <h2 class="heading">Projects</h2>
@@ -9,16 +9,21 @@
     <div class="row">
 
       {% for project in data.projects %}
-      <article class="col col-4 project">
-        <img class="project-image" src="{{ site.url }}/assets/projects/{{ project.image }}" alt="" />
-        <h3 class="project-title">{{ project.title }}</h3>
-        <p class="project-description">{{ project.text }}</p>
-        {% if project.link %}
-          <a class="project-link" href="{{ project.link.href }}">{{ project.link.text }}</a>
-        {% endif %}
-        {% if project.file %}
-          <a class="project-link" href="{{ site.url }}/download/{{ project.file }}">Download</a>
-        {% endif %}
+      <article class="col col-4">
+        <div class="project">
+          <img class="project-image" src="{{ site.url }}/assets/projects/{{ project.image }}" alt="" />
+
+          <div class="project-content">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.text }}</p>
+            {% if project.link %}
+            <a class="project-link" href="{{ project.link.href }}">{{ project.link.text }}</a>
+            {% endif %}
+            {% if project.file %}
+            <a class="project-link" href="{{ site.url }}/download/{{ project.file }}">Download</a>
+            {% endif %}
+          </div>
+        </div>
       </article>
       {% endfor %}
 

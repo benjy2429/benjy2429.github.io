@@ -7,17 +7,14 @@ $spacing: 20px;
   .content {
     vertical-align: top;
     padding: 30px 0;
-    font-weight: 300;
   }
 
   .sidebar {
     text-align: right;
     padding-right: $spacing;
 
-    h2 {
+    .section-title {
       font-size: 20px;
-      letter-spacing: 1px;
-      font-weight: 400;
     }
   }
 
@@ -41,23 +38,6 @@ $spacing: 20px;
 
     p {
       margin-bottom: 30px;
-    }
-
-    .project-link {
-      text-align: center;
-      margin: 40px auto;
-
-      a {
-        border: 1px solid $shadow-color;
-        padding: 10px 15px;
-        text-decoration: none;
-        transition: all 0.3s;
-
-        &:hover {
-          border-color: transparent;
-          box-shadow: 0 5px 15px $shadow-color;
-        }
-      }
     }
   }
 }

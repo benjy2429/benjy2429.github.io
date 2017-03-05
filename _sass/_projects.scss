@@ -1,54 +1,37 @@
 .projects {
-  clear: both;
-  background-color: $body-color-dark;
-  padding: 50px 0;
-
-  .heading {
-    color: #fff;
-  }
-
-  .subtitle {
-    color: #bbb;
-  }
-
   .project {
-    text-align: center;
-    padding: 0 20px 40px;
-    transition: background-color 0.3s;
+    margin: 20px;
+    background-color: $body-color;
+    box-shadow: 0 15px 30px $shadow-color;
+  }
 
-    .project-image {
-      width: 100%;
-      display: block;
-      background-color: #fff;
-      box-shadow: 0 15px 30px $shadow-color;
-      margin-bottom: 20px;
-    }
+  .project-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 
-    .project-title {
-      color: #fff;
-      letter-spacing: 1px;
-      font-weight: 400;
-      margin-bottom: 15px;
-    }
+  .project-content {
+    padding: 0 20px;
+    height: 180px;
+    position: relative;
+  }
 
-    .project-description {
-      color: #bbb;
-      font-weight: 300;
-      margin-bottom: 25px;
-    }
+  .project-title {
+    margin-bottom: 15px;
+    letter-spacing: normal;
+  }
 
-    .project-link {
-      font-size: 14px;
-      padding: 5px 10px;
-      color: #fff;
-      border: 1px solid #fff;
-      transition: all 0.3s;
+  .project-description {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
 
-      &:hover {
-        background-color: $highlight-color;
-        border-color: $highlight-color;
-        box-shadow: 0 5px 15px $shadow-color;
-      }
-    }
+  .project-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    font-weight: $font-weight-light;
   }
 }

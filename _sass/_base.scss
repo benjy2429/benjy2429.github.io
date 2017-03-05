@@ -5,9 +5,20 @@
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
-  background-color: $body-color;
+  font-family: $fonts;
   color: $text-color;
+  background-color: $body-color;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-weight-normal;
+  letter-spacing: $letter-spacing;
+}
+
+p {
+  font-weight: $font-weight-light;
 }
 
 a,
@@ -17,7 +28,7 @@ a:visited {
   color: $highlight-color;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.3s;
+  transition: border-color $transition-length;
 }
 
 a:hover {
@@ -26,48 +37,66 @@ a:hover {
 
 .container {
   max-width: $desktop-breakpoint;
-  margin: 0 auto 50px;
-  padding: 0 $global-horizontal-padding;
+  margin: 0 auto;
+  padding: $global-vertial-padding $global-horizontal-padding;
+
+  &-no-padding {
+    padding: 0 $global-horizontal-padding;
+  }
+}
+
+.section {
+  &-dark {
+    background-color: $body-color-dark;
+
+    .heading {
+      color: $heading-color-light;
+    }
+
+    .subtitle {
+      color: $text-color-light;
+    }
+  }
 }
 
 .heading {
   text-align: center;
   font-size: 28px;
-  letter-spacing: 1px;
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
 .subtitle {
   text-align: center;
-  // color: #BBB;
-  margin-bottom: 50px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  margin-bottom: $global-vertial-padding;
+  letter-spacing: $letter-spacing;
 }
 
-.btn {
+.btn,
+a.btn {
   border: 1px solid $shadow-color;
   padding: 10px 15px;
   text-decoration: none;
-  transition: all 0.3s;
   background: none;
+  font-weight: $font-weight-light;
+  transition:
+    border $transition-length,
+    box-shadow $transition-length,
+    background $transition-length;
 
   &:hover {
     border-color: transparent;
-    box-shadow: 0 5px 15px $shadow-color;
+    box-shadow: $shadow;
     background-color: #fff;
   }
 }
 
-label,
-input,
-textarea {
-  font-size: 16px;
-  color: $text-color;
-  font-weight: 300;
-}
+.btn-light,
+a.btn-light {
+  color: #fff;
+  border: 1px solid #fff;
 
-label {
-  letter-spacing: 1px;
+  &:hover {
+    background-color: $highlight-color;
+    border-color: $highlight-color;
+  }
 }

@@ -1,0 +1,37 @@
+label,
+input,
+textarea {
+  font-family: $fonts;
+  font-size: 16px;
+  color: $text-color;
+  font-weight: $font-weight-light;
+}
+
+label,
+input[type="submit"], {
+  letter-spacing: $letter-spacing;
+}
+
+input:not([type="submit"]),
+textarea {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid $shadow-color;
+  transition:
+    border $transition-length,
+    box-shadow $transition-length;
+  background-color: #fff;
+  outline: none;
+  padding: 10px;
+  resize: vertical;
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: $shadow;
+  }
+}
+
+textarea {
+  height: 250px;
+}
