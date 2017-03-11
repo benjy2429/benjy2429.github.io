@@ -2,7 +2,7 @@
 
 Built with Jekyll and hosted on GitHub Pages.
 
-http://www.ben-carr.co.uk
+[ben-carr.co.uk](http://www.ben-carr.co.uk)
 
 ## Dependencies
 
@@ -22,7 +22,7 @@ $ yarn
 
 `$ npm start`
 
-Visit http://localhost:4000
+Visit [http://localhost:4000](http://localhost:4000)
 
 ### Linting
 
