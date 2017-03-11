@@ -3,6 +3,7 @@
     margin: 20px;
     background-color: #fff;
     box-shadow: 0 15px 30px $shadow-color;
+    overflow: hidden;
   }
 
   .project-image {
@@ -13,7 +14,7 @@
 
   .project-content {
     padding: 0 20px;
-    height: 180px;
+    height: 220px;
     position: relative;
   }
 
@@ -23,13 +24,13 @@
   }
 
   .project-description {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 
   .project-link {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     margin: 20px;
     font-weight: $font-weight-normal;
   }

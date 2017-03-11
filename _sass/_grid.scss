@@ -48,7 +48,29 @@ $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
 
   $nth-expression: $max-columns / $i;
 
-  .col-#{$i}:nth-of-type(#{$nth-expression}n) {
-    margin-right: 0;
+  @include mq($from: desktop) {
+    .col-#{$i}:nth-of-type(#{$nth-expression}n) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq($from: mobile, $until: desktop) {
+    .col-#{$i}-t {
+      width: $column-width;
+    }
+
+    .col-#{$i}-t:nth-of-type(#{$nth-expression}n) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq($until: mobile) {
+    .col-#{$i}-m {
+      width: $column-width;
+    }
+
+    .col-#{$i}-m:nth-of-type(#{$nth-expression}n) {
+      margin-right: 0;
+    }
   }
 }

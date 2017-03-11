@@ -3,7 +3,7 @@
   text-align: center;
   left: 0;
   right: 0;
-  padding: $global-vertial-padding 0;
+  padding: $global-vertical-padding 0 ($global-vertical-padding - 30);
 
   .social-links {
     display: inline-block;
@@ -15,5 +15,9 @@
       float: left;
       padding: 5px 15px;
     }
+  }
+
+  @include mq($until: mobile) {
+    padding: 40px 0 10px;
   }
 }

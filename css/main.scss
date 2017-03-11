@@ -2,6 +2,7 @@
 # Main stylesheet
 ---
 
+@import '../node_modules/sass-mq/mq';
 @import 'globals';
 @import 'base';
 @import 'grid';

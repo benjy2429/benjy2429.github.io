@@ -2,14 +2,12 @@
 <section class="section">
 
   <div class="row">
-    <div class="sidebar col col-3">
+    <div class="sidebar col col-3 col-12-m">
       <h2 class="section-title">{{ data.section_title }}</h2>
     </div>
 
-    <div class="content col col-9">
-      <div class="point"></div>
+    <div class="content col col-9 col-12-m">
       {% for element in data.content %}
-
         {% if element.type == 'project' %}
           <div class="project-link">
             <a href="{{ element.href }}">Find out more about {{ element.title }}</a>
@@ -17,7 +15,6 @@
         {% else %}
           <p>{{ element.text }}</p>
         {% endif %}
-
       {% endfor %}
     </div>
   </div>
