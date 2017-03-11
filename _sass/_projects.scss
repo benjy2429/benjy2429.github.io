@@ -1,7 +1,7 @@
 .projects {
   .project {
     margin: 20px;
-    background-color: $body-color;
+    background-color: #fff;
     box-shadow: 0 15px 30px $shadow-color;
   }
 
@@ -24,7 +24,6 @@
 
   .project-description {
     margin-bottom: 15px;
-    text-align: justify;
   }
 
   .project-link {
@@ -32,6 +31,6 @@
     bottom: 0;
     left: 0;
     margin: 20px;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-normal;
   }
 }
