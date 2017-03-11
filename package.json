@@ -9,6 +9,7 @@
   "author": "Ben Carr",
   "license": "MIT",
   "scripts": {
+    "start": "jekyll s --host 0.0.0.0",
     "lint": "npm run lint-css && npm run lint-html",
     "lint-css": "stylelint _sass/*.scss",
     "lint-html": "htmlhint"
