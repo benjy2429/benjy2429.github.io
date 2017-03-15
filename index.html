@@ -2,14 +2,9 @@
 layout: default
 ---
 
-<div class="container container-no-padding">
-  <div class="jumbotron">
-    <h1 class="greeting">Hi, I'm Ben</h1>
-    <div class="job-title">Software Developer</div>
-  </div>
-</div>
+{% include hero.html %}
 
-<div class="container">
+<div id="about" class="container">
   {% include section.html data_file=site.data.work %}
   {% include section.html data_file=site.data.education %}
 </div>
@@ -19,3 +14,6 @@ layout: default
 {% include contact.html %}
 
 {% include footer.html %}
+
+<script src="/assets/smooth-scroll.min.js"></script>
+<script src="/assets/main.js"></script>

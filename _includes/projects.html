@@ -11,7 +11,7 @@
       {% for project in data.projects %}
       <article class="col col-4 col-6-t col-12-m">
         <div class="project">
-          <img class="project-image" src="{{ site.url }}/assets/projects/{{ project.image }}" alt="" />
+          <img class="project-image" src="/assets/projects/{{ project.image }}" alt="" />
 
           <div class="project-content">
             <h3 class="project-title">{{ project.title }}</h3>
@@ -20,7 +20,7 @@
             <a class="project-link" href="{{ project.link.href }}">{{ project.link.text }}</a>
             {% endif %}
             {% if project.file %}
-            <a class="project-link" href="{{ site.url }}/download/{{ project.file }}">Download</a>
+            <a class="project-link" href="/download/{{ project.file }}">Download</a>
             {% endif %}
           </div>
         </div>

@@ -25,17 +25,17 @@ p {
   margin-bottom: 30px;
 }
 
-a,
-a:active,
-a:focus,
-a:visited {
+a:not(.link-unstyled),
+a:not(.link-unstyled):active,
+a:not(.link-unstyled):focus,
+a:not(.link-unstyled):visited {
   color: $highlight-color;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color $transition-length;
 }
 
-a:hover {
+a:not(.link-unstyled):hover {
   border-color: $highlight-color;
 }
 
@@ -88,6 +88,8 @@ a:hover {
 
 .btn,
 a.btn {
+  display: inline-block;
+  cursor: pointer;
   border: 1px solid $shadow-color;
   padding: 10px 15px;
   text-decoration: none;
