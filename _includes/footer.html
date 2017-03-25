@@ -1,10 +1,10 @@
 {% assign social_links=site.data.social_links %}
 
-<footer class="footer">
+<footer class="footer section-dark">
   <ul class="social-links">
     {% for link in social_links %}
       <li>
-        <a href="{{ link.href }}">{{ link.name }}</a>
+        <a class="link-light" href="{{ link.href }}">{{ link.name }}</a>
       </li>
     {% endfor %}
   </ul>

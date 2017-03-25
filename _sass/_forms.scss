@@ -35,3 +35,9 @@ textarea {
 textarea {
   height: 250px;
 }
+
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+}

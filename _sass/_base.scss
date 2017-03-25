@@ -29,14 +29,24 @@ a:not(.link-unstyled),
 a:not(.link-unstyled):active,
 a:not(.link-unstyled):focus,
 a:not(.link-unstyled):visited {
-  color: $highlight-color;
+  color: $text-color;
+  font-weight: $font-weight-normal;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color $transition-length;
+
+  &.link-light {
+    color: $text-color-light;
+  }
 }
 
 a:not(.link-unstyled):hover {
-  border-color: $highlight-color;
+  cursor: pointer;
+  border-color: $text-color;
+
+  &.link-light {
+    border-color: $text-color-light;
+  }
 }
 
 .container {
@@ -56,6 +66,7 @@ a:not(.link-unstyled):hover {
 .section {
   &-dark {
     background-color: $body-color-dark;
+    color: $text-color-light;
 
     .heading {
       color: $heading-color-light;
