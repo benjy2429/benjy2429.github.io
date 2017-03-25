@@ -105,11 +105,12 @@ a.btn {
   padding: 10px 15px;
   text-decoration: none;
   background: none;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-normal;
   transition:
     border $transition-length,
     box-shadow $transition-length,
-    background $transition-length;
+    background $transition-length,
+    color $transition-length;
 
   &:hover {
     border-color: transparent;
@@ -124,7 +125,7 @@ a.btn-light {
   border: 1px solid #fff;
 
   &:hover {
-    background-color: $highlight-color;
-    border-color: $highlight-color;
+    color: $text-color;
+    background-color: #fff;
   }
 }
