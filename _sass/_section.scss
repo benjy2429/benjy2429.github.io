@@ -20,7 +20,6 @@ $spacing: 20px;
 
   .content {
     padding-left: $spacing * 2;
-    font-size: 18px;
     margin-bottom: 0;
 
     p {
@@ -34,7 +33,7 @@ $spacing: 20px;
       padding: 0 0 20px;
 
       .section-title {
-        font-size: 26px;
+        font-size: $font-size-heading-mobile;
       }
     }
 

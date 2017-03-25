@@ -19,10 +19,15 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: $font-size-body;
   font-weight: $font-weight-light;
   line-height: 30px;
   margin-bottom: 30px;
+
+  @include mq($until: mobile) {
+    font-size: $font-size-body-mobile;
+    line-height: 26px;
+  }
 }
 
 a:not(.link-unstyled),
@@ -31,12 +36,17 @@ a:not(.link-unstyled):focus,
 a:not(.link-unstyled):visited {
   color: $text-color;
   font-weight: $font-weight-normal;
+  font-size: $font-size-body;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color $transition-length;
 
   &.link-light {
     color: $text-color-light;
+  }
+
+  @include mq($until: mobile) {
+    font-size: $font-size-body-mobile;
   }
 }
 
@@ -80,11 +90,11 @@ a:not(.link-unstyled):hover {
 
 .heading {
   text-align: center;
-  font-size: 36px;
+  font-size: $font-size-heading;
   margin-bottom: 20px;
 
   @include mq($until: mobile) {
-    font-size: 26px;
+    font-size: $font-size-heading-mobile;
   }
 }
 
