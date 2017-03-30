@@ -1,20 +1,19 @@
 ---
-title: Ben Carr | Developer
+title: Ben Carr | Software Developer
 email: ben-carr7@hotmail.com
 description: Personal website for Ben Carr
 url: "https://benjy2429.github.io"
 github_username: benjy2429
 
 # Build settings
-markdown: kramdown
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
   - yarn.lock
   - node_modules
+  - README.md
+  - webpack.config.js
 sass:
   sass_dir: _sass
   style: compressed
