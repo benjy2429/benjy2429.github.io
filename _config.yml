@@ -12,9 +12,6 @@ exclude:
   - node_modules
   - README.md
   - webpack.config.js
-sass:
-  sass_dir: _sass
-  style: compressed
 defaults:
   -
     scope:
