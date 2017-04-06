@@ -11,7 +11,7 @@ exclude:
   - yarn.lock
   - node_modules
   - README.md
-  - webpack.config.js
+  - gulpfile.js
 defaults:
   -
     scope:
