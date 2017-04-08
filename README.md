@@ -2,11 +2,11 @@
 
 Built with Jekyll and hosted on GitHub Pages.
 
-[ben-carr.co.uk](http://www.ben-carr.co.uk)
+[bencarr.co.uk](http://www.bencarr.co.uk)
 
 ## Dependencies
 
-- NodeJS 6.9.1
+- NodeJS 6.10.0
 - Ruby 2.4.0
 
 ## Development
@@ -20,9 +20,13 @@ $ yarn
 
 ### Running locally
 
-`$ npm start`
+`$ gulp`
 
 Visit [http://localhost:4000](http://localhost:4000)
+
+### Building
+
+`$ gulp build`
 
 ### Linting
 
