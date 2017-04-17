@@ -1,12 +1,16 @@
-@import '../_sass/utilities';
 @import '../_sass/globals';
 @import '../_sass/base';
-@import '../_sass/grid';
 @import '../_sass/forms';
-@import '../_sass/hero';
-@import '../_sass/section';
-@import '../_sass/projects';
-@import '../_sass/contact';
-@import '../_sass/footer';
-@import '../_sass/not-found';
-@import '../_sass/thanks';
+@import '../_sass/grid';
+@import '../_sass/utilities';
+
+// Sections
+@import '../_sass/sections/hero';
+@import '../_sass/sections/section';
+@import '../_sass/sections/projects';
+@import '../_sass/sections/contact';
+@import '../_sass/sections/footer';
+
+// Pages
+@import '../_sass/pages/not-found';
+@import '../_sass/pages/thanks';
