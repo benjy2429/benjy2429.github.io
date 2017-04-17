@@ -1,37 +1,26 @@
 .hero {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  background-image: url('/assets/background.jpg');
-  background-size: cover;
-  background-position: 0 50%;
   color: #fff;
   text-align: center;
 
-  &-plain {
-    background: none;
-    color: $text-color;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: $body-color-dark;
   }
 
   .hero-content {
-    position: absolute;
-    display: block;
-    width: 100%;
     padding: 0 $global-horizontal-padding;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .title {
-    font-size: 60px;
-    text-transform: none;
-    margin-bottom: $global-vertical-padding / 2;
-    font-weight: $font-weight-light;
-  }
-
-  .message {
-    font-size: 30px;
-    margin-bottom: $global-vertical-padding / 2;
+    top: 45%;
   }
 
   .name {
@@ -56,13 +45,6 @@
     letter-spacing: 5px;
   }
 
-  .status-code {
-    font-size: 160px;
-    color: $body-color;
-    text-shadow: 0 5px 15px $shadow-color;
-    margin-bottom: $global-vertical-padding / 2;
-  }
-
   $chevron-thickness: 2px;
   $chevron-size: 20px;
 
@@ -83,6 +65,7 @@
     font-weight: $font-weight-light;
     font-size: 40px;
     animation: chevron-bounce 5s ease 2s infinite;
+    display: none;
   }
 
   .chevron::before {
@@ -97,9 +80,7 @@
   }
 
   @include mq($until: mobile) {
-    .title {
-      font-size: 30px;
-    }
+    height: 100vh;
 
     .name {
       font-size: 50px;
@@ -107,19 +88,13 @@
     }
 
     .job-title {
-      font-size: 18px;
+      font-size: $font-size-body-mobile;
       padding: 5px 10px;
       letter-spacing: 3px;
     }
 
-    .status-code {
-      font-size: 100px;
-      margin-bottom: 30px;
-    }
-
-    .message {
-      font-size: 18px;
-      margin-bottom: 30px;
+    .chevron {
+      display: block;
     }
   }
 }

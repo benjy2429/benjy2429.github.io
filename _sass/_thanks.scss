@@ -1,0 +1,16 @@
+#thanks {
+  text-align: center;
+
+  .title {
+    font-size: 60px;
+    text-transform: none;
+    margin-bottom: $global-vertical-padding / 2;
+    font-weight: $font-weight-light;
+  }
+
+  @include mq($until: mobile) {
+    .title {
+      font-size: 30px;
+    }
+  }
+}

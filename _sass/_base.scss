@@ -8,6 +8,7 @@ html {
   font-family: $fonts;
   color: $text-color;
   background-color: $body-color;
+  overflow-y: scroll;
 }
 
 h1,
@@ -38,11 +39,25 @@ a:not(.link-unstyled):visited {
   font-weight: $font-weight-normal;
   font-size: $font-size-body;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color $transition-length;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background-color: $text-color;
+    transition: width $transition-length;
+  }
 
   &.link-light {
     color: $text-color-light;
+
+    &::after {
+      background-color: $text-color-light;
+    }
   }
 
   @include mq($until: mobile) {
@@ -52,10 +67,9 @@ a:not(.link-unstyled):visited {
 
 a:not(.link-unstyled):hover {
   cursor: pointer;
-  border-color: $text-color;
 
-  &.link-light {
-    border-color: $text-color-light;
+  &::after {
+    width: 100%;
   }
 }
 
@@ -68,7 +82,7 @@ a:not(.link-unstyled):hover {
     padding: $global-vertical-padding-mobile $global-horizontal-padding;
   }
 
-  &-no-padding {
+  &-flush {
     padding: 0 $global-horizontal-padding;
   }
 }
