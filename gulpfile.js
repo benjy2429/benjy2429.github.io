@@ -17,6 +17,10 @@ gulp.task('js', () => {
     .pipe(gulp.dest('./assets'))
 });
 
+gulp.task('js:watch', () => {
+  gulp.watch('_assets/main.js', ['js']);
+});
+
 gulp.task('css', () => {
   return gulp.src('_assets/main.scss')
     .pipe(sass({ outputStyle: 'compressed' })
@@ -43,4 +47,4 @@ gulp.task('jekyll', () => {
 });
 
 gulp.task('build', ['js', 'css']);
-gulp.task('default', ['jekyll', 'css:watch']);
+gulp.task('default', ['jekyll', 'css:watch', 'js:watch']);

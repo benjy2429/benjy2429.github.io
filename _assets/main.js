@@ -1,14 +1,36 @@
 const smoothScroll = require('../node_modules/smooth-scroll/dist/js/smooth-scroll.js');
 const aos = require('../node_modules/aos/dist/aos.js');
+const throttle = require('../node_modules/lodash.throttle');
 
 (function() {
+  // Navbar
+  const navbar = document.getElementsByClassName('navbar')[0];
+  const hamburger = document.getElementsByClassName('navbar-hamburger')[0];
+
+  window.onscroll = throttle(function() {
+    if (window.innerWidth > 768) {
+      const scrollPos = window.pageYOffset || document.body.scrollTop;
+      if (scrollPos > 15) {
+        navbar.classList.remove('navbar-sticky');
+      } else {
+        navbar.classList.add('navbar-sticky');
+      }
+    }
+  }, 100);
+
+  hamburger.onclick = function(e) {
+    e.preventDefault();
+    navbar.classList.toggle('navbar-collapsed');
+  }
+
   // SmoothScroll
   const smoothLinks = document.querySelectorAll('a[data-scroll]');
   Array.from(smoothLinks).forEach(function(link) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       var target = document.querySelector(link.hash);
-      target && smoothScroll.animateScroll(target, e.target, { speed: 750 });
+      target && smoothScroll.animateScroll(target, e.target, { speed: 750, offset: 50 });
+      navbar.classList.remove('navbar-collapsed');
     });
   });
 

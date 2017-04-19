@@ -1,0 +1,126 @@
+$navbar-height: 50px;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: $navbar-height;
+  color: $text-color-light;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition:
+    height $transition-length,
+    background $transition-length,
+    color $transition-length;
+
+  .navbar-link-container {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .navbar-link {
+    display: block;
+    padding: 0 15px;
+    margin: 0 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .logo {
+    padding: 0 15px;
+    font-weight: 600;
+  }
+
+  .navbar-left {
+    float: left;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+
+  .navbar-link,
+  .logo {
+    line-height: $navbar-height;
+    color: #fff;
+    font-size: 16px;
+    transition:
+      line-height $transition-length,
+      color $transition-length;
+  }
+
+  .navbar-hamburger {
+    display: none;
+    padding: 0 15px;
+    line-height: $navbar-height;
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  @include mq($from: mobile) {
+    &.navbar-sticky {
+      background-color: transparent;
+
+      .navbar-link,
+      .logo {
+        line-height: 100px;
+        color: $text-color-light;
+      }
+    }
+  }
+
+  @include mq($until: mobile) {
+    .container {
+      padding: 0;
+    }
+
+    .navbar-hamburger {
+      display: block;
+    }
+
+    .navbar-link-container {
+      position: absolute;
+      top: $navbar-height;
+      left: 0;
+      right: -$navbar-height;
+      opacity: 0;
+      visibility: hidden;
+      transition:
+        opacity $transition-length,
+        visibility $transition-length,
+        right $transition-length;
+
+      li {
+        display: block;
+        text-align: right;
+      }
+    }
+
+    .navbar-link {
+      color: #fff;
+      margin: 0;
+    }
+
+    &.navbar-collapsed {
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+
+      .navbar-link-container {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
