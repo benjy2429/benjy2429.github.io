@@ -31,31 +31,32 @@ p {
   }
 }
 
-a:not(.link-unstyled),
-a:not(.link-unstyled):active,
-a:not(.link-unstyled):focus,
-a:not(.link-unstyled):visited {
+a:not(.link-unstyled) {
   color: $text-color;
   font-weight: $font-weight-normal;
   font-size: $font-size-body;
   text-decoration: none;
   position: relative;
 
-  &::after {
+  &::before {
     position: absolute;
     content: '';
     bottom: 0;
     left: 0;
     height: 1px;
-    width: 0;
+    width: 100%;
     background-color: $text-color;
-    transition: width $transition-length;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition:
+      transform $transition-length,
+      visibility $transition-length;
   }
 
   &.link-light {
     color: $text-color-light;
 
-    &::after {
+    &::before {
       background-color: $text-color-light;
     }
   }
@@ -68,8 +69,9 @@ a:not(.link-unstyled):visited {
 a:not(.link-unstyled):hover {
   cursor: pointer;
 
-  &::after {
-    width: 100%;
+  &::before {
+    visibility: visible;
+    transform: scaleX(1);
   }
 }
 
