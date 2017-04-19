@@ -25,7 +25,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('css:watch', () => {
-  gulp.watch('_sass/*.scss', ['css']);
+  gulp.watch('_sass/**/*.scss', ['css']);
 });
 
 gulp.task('jekyll', () => {

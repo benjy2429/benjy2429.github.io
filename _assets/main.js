@@ -1,9 +1,16 @@
-var smoothScroll = require('../node_modules/smooth-scroll/dist/js/smooth-scroll.js');
-var aos = require('../node_modules/aos/dist/aos.js');
+const smoothScroll = require('../node_modules/smooth-scroll/dist/js/smooth-scroll.js');
+const aos = require('../node_modules/aos/dist/aos.js');
 
 (function() {
   // SmoothScroll
-  smoothScroll.init({ speed: 750 });
+  const smoothLinks = document.querySelectorAll('a[data-scroll]');
+  Array.from(smoothLinks).forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(link.hash);
+      target && smoothScroll.animateScroll(target, e.target, { speed: 750 });
+    });
+  });
 
   // AnimateOnScroll
   aos.init();
