@@ -14,6 +14,28 @@ const aos = require('../node_modules/aos/dist/aos.js');
 
   // AnimateOnScroll
   aos.init();
+
+  console.debug('  ____  ______ _   _  _____          _____  _____   ');
+  console.debug(' |  _ \\|  ____| \\ | |/ ____|   /\\   |  __ \\|  __ \\  ');
+  console.debug(' | |_) | |__  |  \\| | |       /  \\  | |__) | |__) | ');
+  console.debug(' |  _ <|  __| | . ` | |      / /\\ \\ |  _  /|  _  /  ');
+  console.debug(' | |_) | |____| |\\  | |____ / ____ \\| | \\ \\| | \\ \\  ');
+  console.debug(' |____/|______|_| \\_|\\_____/_/    \\_\\_|  \\_\\_|  \\_\\ ');
+
+  const match = 'flip';
+  var matchedIndex = 0;
+  document.onkeyup = function(e) {
+    if (e.key === match[matchedIndex]) {
+      matchedIndex += 1;
+    } else {
+      matchedIndex = 0;
+    }
+    if (matchedIndex === match.length) {
+      document.body.classList.toggle('flipped');
+      matchedIndex = 0;
+    }
+  };
+
 })();
 
 // Google Anayltics
