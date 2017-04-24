@@ -6,11 +6,13 @@ const sass = require('gulp-sass');
 const gutil = require('gulp-util');
 const source = require('vinyl-source-stream');
 const browserify = require('browserify');
+const babelify = require('babelify');
 const child = require('child_process');
 
 gulp.task('js', () => {
-  const bundleStream = browserify('_assets/main.js').bundle();
-  return bundleStream
+  return browserify('_assets/main.js')
+    .transform(babelify, { presets: ['es2015'] })
+    .bundle()
     .pipe(source('main.js'))
     .pipe(streamify(uglify()))
     .pipe(rename('bundle.js'))
