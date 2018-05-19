@@ -22,6 +22,9 @@
     "react-dom": "^16",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.1.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.8.2",
     "webpack-cli": "^2.1.3",
@@ -39,8 +42,9 @@
     "watch": "webpack --watch --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext js,jsx src",
-    "precommit": "run-p lint"
+    "lint-js": "eslint --ext js,jsx src",
+    "lint-css": "stylelint src/styles",
+    "precommit": "run-p lint-js lint-css"
   },
   "repository": {
     "type": "git",

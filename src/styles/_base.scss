@@ -89,21 +89,6 @@ a:not(.link-unstyled):hover {
   }
 }
 
-.section {
-  &-dark {
-    background-color: $body-color-dark;
-    color: $text-color-light;
-
-    .heading {
-      color: $heading-color-light;
-    }
-
-    .subtitle {
-      color: $text-color-light;
-    }
-  }
-}
-
 .heading {
   text-align: center;
   font-size: $font-size-heading;
@@ -120,6 +105,21 @@ a:not(.link-unstyled):hover {
 
   @include breakpoint(mobile) {
     margin-bottom: $global-vertical-padding-mobile;
+  }
+}
+
+.section {
+  &-dark {
+    background-color: $body-color-dark;
+    color: $text-color-light;
+
+    .heading {
+      color: $heading-color-light;
+    }
+
+    .subtitle {
+      color: $text-color-light;
+    }
   }
 }
 
