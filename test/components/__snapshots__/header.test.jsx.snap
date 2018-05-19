@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<section
+  className="hero container"
+>
+  <div
+    className="hero-wrapper"
+  >
+    <div
+      className="hero-title"
+    >
+      Hi, I’m Ben Carr.
+    </div>
+    <div
+      className="hero-subtitle"
+    >
+      I’m a full stack software developer.
+    </div>
+  </div>
+</section>
+`;

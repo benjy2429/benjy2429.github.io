@@ -1,4 +1,12 @@
 import React from 'react';
+import converter from 'number-to-words';
+
+const yearInWords = () => {
+  const year = new Date().getFullYear().toString();
+  const first = year.slice(0, 2);
+  const second = year.slice(2, 4);
+  return `${converter.toWords(first)}-${converter.toWords(second)}`;
+};
 
 export default ({ socialLinks }) => (
   <footer className="footer section-dark">
@@ -11,6 +19,6 @@ export default ({ socialLinks }) => (
         </li>
       ))}
     </ul>
-    <p>&copy; {new Date().getFullYear()} | Ben Carr</p>
+    <p>&copy; {yearInWords()}</p>
   </footer>
 );

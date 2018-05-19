@@ -1,14 +1,12 @@
 import React from 'react';
 
 export default () => (
-  <section className="hero center-all">
-    <div className="hero-content center-all-inner">
-      <h1 className="name">
-        <span className="first">Ben</span>
-        <span className="surname">Carr</span>
-      </h1>
-      <div className="job-title">Software Developer</div>
+  <section className="hero container">
+    <div className="hero-wrapper">
+      <div className="hero-title">Hi, I&#8217;m Ben Carr.</div>
+      <div className="hero-subtitle">
+        I&#8217;m a full stack software developer.
+      </div>
     </div>
-    <a href="#about" className="chevron link-unstyled" />
   </section>
 );
