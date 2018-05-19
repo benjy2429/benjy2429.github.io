@@ -22,6 +22,7 @@ textarea {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid $shadow-color;
+  box-shadow: none;
   transition:
     border $transition-length,
     box-shadow $transition-length;
