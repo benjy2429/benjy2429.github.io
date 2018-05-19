@@ -16,7 +16,7 @@ const education = {
 const work = {
   sectionTitle: 'Work',
   content: [
-    { text: 'I\'m currently working as an associate software developer for <a href="https://www.sky.com">Sky</a> in Leeds.' },
+    { text: 'I\'m currently working as a software developer for <a href="https://www.sky.com">Sky</a> in Leeds.' },
     { text: 'I joined through the Software Engineering Academy graduate scheme. This involved a six month project developing a piece of software in an agile team. In our team, we created a digital whiteboard for visualising and orgainising development squads.' },
     { text: 'These days you\'ll find me in the Digital Help team programming mainly in ReactJS and Ruby. I deal with frontend apps such as the <a href="https://www.sky.com/help">Help Homepage</a> and <a href="https://contactus.sky.com">Contact Us</a> as well as backend services and CMS\'s that power the help articles and diagnostic flows.' }
   ]
@@ -85,8 +85,8 @@ export default class App extends React.Component {
       <div>
         <Header />
         <div id="about" className="container">
-          <Section {...education} />
           <Section {...work} />
+          <Section {...education} />
         </div>
         <Projects projects={projects} />
         <Contact />

@@ -1,5 +1,7 @@
 import path from 'path';
+import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 
 export default {
   entry: './src/index.js',
@@ -21,19 +23,23 @@ export default {
         use: ExtractTextPlugin.extract(
           {
             fallback: 'style-loader',
-            use: ['css-loader', 'sass-loader']
+            use: [
+              { loader: 'css-loader', options: { minimize: true } },
+              'sass-loader'
+            ]
           })
       }
     ]
   },
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx", '.scss']
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
-  },
+  mode: 'production',
   plugins: [
-    new ExtractTextPlugin({filename: 'main.css'})
+    new ExtractTextPlugin({filename: 'main.css'}),
+    new UglifyJsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    })
   ]
 };
