@@ -6,7 +6,7 @@
 html {
   font-family: "Lato", serif;
   color: #666;
-  background-color: #eee;
+  background-color: #fff;
   overflow-y: scroll; }
 
 h1,
@@ -623,7 +623,7 @@ textarea {
   text-align: center; }
   #not-found .status-code {
     font-size: 160px;
-    color: #eee;
+    color: #fff;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     margin-bottom: 35px; }
   #not-found .message {

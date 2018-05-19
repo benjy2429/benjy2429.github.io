@@ -9,7 +9,7 @@ const renderProject = project => (
         <h3 className="project-title">{project.title}</h3>
         <p className="project-description">{project.text}</p>
         { project.link && (
-          <a className="project-link" href="{project.link.href}">{project.link.text}</a>
+          <a className="project-link" href={project.link.href}>{project.link.text}</a>
         )}
         { project.file && (
           <a className="project-link" href={`/download/${project.file}`}>Download</a>
