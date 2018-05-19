@@ -16,7 +16,7 @@
     }
   }
 
-  @include mq($until: mobile) {
+  @include breakpoint(mobile) {
     padding: 40px 0 10px;
   }
 }

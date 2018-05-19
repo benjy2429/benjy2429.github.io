@@ -1,0 +1,16 @@
+@import 'globals';
+@import 'base';
+@import 'forms';
+@import 'grid';
+@import 'utilities';
+
+// Sections
+@import 'sections/hero';
+@import 'sections/section';
+@import 'sections/projects';
+@import 'sections/contact';
+@import 'sections/footer';
+
+// Pages
+@import 'pages/not-found';
+@import 'pages/thanks';

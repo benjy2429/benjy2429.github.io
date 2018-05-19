@@ -15,7 +15,7 @@
     text-align: center;
   }
 
-  @include mq($until: mobile) {
+  @include breakpoint(mobile) {
     label {
       text-align: left;
     }

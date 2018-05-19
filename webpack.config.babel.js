@@ -1,4 +1,5 @@
 import path from 'path';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
   entry: './src/index.js',
@@ -11,9 +12,17 @@ export default {
       {
         test: /.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          { loader: 'babel-loader' },
-        ]
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /.scss$/,
+        use: ExtractTextPlugin.extract(
+          {
+            fallback: 'style-loader',
+            use: ['css-loader', 'sass-loader']
+          })
       }
     ]
   },
@@ -24,5 +33,7 @@ export default {
     react: 'React',
     'react-dom': 'ReactDOM'
   },
-  mode: 'production'
+  plugins: [
+    new ExtractTextPlugin({filename: 'main.css'})
+  ]
 };

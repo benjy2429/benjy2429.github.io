@@ -13,7 +13,7 @@
     margin-bottom: $global-vertical-padding / 2;
   }
 
-  @include mq($until: mobile) {
+  @include breakpoint(mobile) {
     .status-code {
       font-size: 100px;
       margin-bottom: 30px;

@@ -79,7 +79,7 @@
     transform: translateX(-50%) rotate(135deg);
   }
 
-  @include mq($until: mobile) {
+  @include breakpoint(mobile) {
     height: 100vh;
 
     .name {

@@ -8,7 +8,7 @@
     font-weight: $font-weight-light;
   }
 
-  @include mq($until: mobile) {
+  @include breakpoint(mobile) {
     .title {
       font-size: 30px;
     }
