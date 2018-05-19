@@ -1,33 +1,39 @@
 # Personal Website - Ben Carr
 
-Built with Jekyll and hosted on GitHub Pages.
+Built with ReactJS and hosted on GitHub Pages.
 
-[bencarr.co.uk](http://www.bencarr.co.uk)
+[https://bencarr.co.uk](https://bencarr.co.uk)
 
 ## Dependencies
 
-- NodeJS 6.10.0
-- Ruby 2.4.0
+- Node LTS
 
 ## Development
 
 ### Installation
 
+Install Node dependencies with NPM.
+
 ```
-$ bundle
-$ yarn
+$ npm i
 ```
 
 ### Running locally
 
-`$ gulp`
+Build and run the project locally using Webpack.
 
-Visit [http://localhost:4000](http://localhost:4000)
+`$ npm run dev`
+
+Visit [http://localhost:8080](http://localhost:8080)
 
 ### Building
 
-`$ gulp build`
+Build the project for production using Webpack.
+
+`$ npm run build`
 
 ### Linting
 
-`$ npm lint`
+Run JS and CSS linters.
+
+`$ npm run lint`
