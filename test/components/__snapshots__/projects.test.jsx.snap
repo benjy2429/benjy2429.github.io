@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects component renders projects 1`] = `
+<section
+  className="projects"
+>
+  <div
+    className="container"
+  >
+    <h2>
+      Projects
+    </h2>
+    <p>
+      These are some of the projects I’ve worked on, both at university and in my spare time.
+    </p>
+    <div
+      className="projects-wrapper"
+    >
+      <article
+        className="project"
+        key="Demo project"
+      >
+        <img
+          alt=""
+          className="project-image"
+          src="/assets/projects/project-image.jpg"
+        />
+        <div
+          className="project-content"
+        >
+          <h3
+            className="project-title"
+          >
+            Demo project
+          </h3>
+          <p
+            className="project-description"
+          >
+            Project description
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Projects component renders projects with a file 1`] = `
+<section
+  className="projects"
+>
+  <div
+    className="container"
+  >
+    <h2>
+      Projects
+    </h2>
+    <p>
+      These are some of the projects I’ve worked on, both at university and in my spare time.
+    </p>
+    <div
+      className="projects-wrapper"
+    >
+      <article
+        className="project"
+        key="Demo project"
+      >
+        <img
+          alt=""
+          className="project-image"
+          src="/assets/projects/project-image.jpg"
+        />
+        <div
+          className="project-content"
+        >
+          <h3
+            className="project-title"
+          >
+            Demo project
+          </h3>
+          <p
+            className="project-description"
+          >
+            Project description
+          </p>
+          <a
+            className="project-link"
+            href="/download/file.pdf"
+          >
+            Download
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Projects component renders projects with a link 1`] = `
+<section
+  className="projects"
+>
+  <div
+    className="container"
+  >
+    <h2>
+      Projects
+    </h2>
+    <p>
+      These are some of the projects I’ve worked on, both at university and in my spare time.
+    </p>
+    <div
+      className="projects-wrapper"
+    >
+      <article
+        className="project"
+        key="Demo project"
+      >
+        <img
+          alt=""
+          className="project-image"
+          src="/assets/projects/project-image.jpg"
+        />
+        <div
+          className="project-content"
+        >
+          <h3
+            className="project-title"
+          >
+            Demo project
+          </h3>
+          <p
+            className="project-description"
+          >
+            Project description
+          </p>
+          <a
+            className="project-link"
+            href="test.com"
+          >
+            Visit site
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+`;

@@ -1,10 +1,25 @@
 .projects {
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 40px;
+    height: 100%;
+
+    @include breakpoint(desktop) {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include breakpoint(mobile) {
+      grid-template-columns: auto;
+    }
+  }
+
   .project {
-    margin: 20px;
     background-color: #fff;
-    box-shadow: 0 15px 30px $shadow-color;
     overflow: hidden;
-    color: $text-color;
+    border: 1px solid $shadow-color;
+    padding-bottom: 40px;
+    position: relative;
   }
 
   .project-image {
@@ -15,8 +30,6 @@
 
   .project-content {
     padding: 0 20px;
-    height: 220px;
-    position: relative;
   }
 
   .project-title {
@@ -24,14 +37,10 @@
     letter-spacing: normal;
   }
 
-  .project-description {
-    margin-bottom: 0;
-  }
-
   .project-link {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     margin: 20px;
   }
 }
