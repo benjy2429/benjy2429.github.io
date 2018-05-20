@@ -19,6 +19,6 @@ export default ({ socialLinks }) => (
         </li>
       ))}
     </ul>
-    <p>&copy; {yearInWords()}</p>
+    <p>Copyright &copy; {yearInWords()} | Ben Carr</p>
   </footer>
 );
