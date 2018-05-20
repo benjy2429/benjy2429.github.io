@@ -1,41 +1,9 @@
 import React from 'react';
 import Header from './header';
-import Section from './section';
+import About from './about';
 import Projects from './projects';
 import Contact from './contact';
 import Footer from './footer';
-
-const education = {
-  sectionTitle: 'Education',
-  content: [
-    {
-      text:
-        'I graduated from <a href="https://www.sheffield.ac.uk/">The University of Sheffield</a> in 2015 with a First Class Masters degree in Computer Science. For my dissertation, I developed a real-time shadow puppet storytelling application using Microsoft’s Kinect sensor and C++.'
-    },
-    {
-      text:
-        'I also worked as a Student Abassador during my final years. This involved helping out at open days and events, demonstrating in technical activities and giving presentations about life as a student.'
-    }
-  ]
-};
-
-const work = {
-  sectionTitle: 'Work',
-  content: [
-    {
-      text:
-        'I\'m currently working as a software developer for <a href="https://www.sky.com">Sky</a> in Leeds.'
-    },
-    {
-      text:
-        'I joined through the Software Engineering Academy graduate scheme. This involved a six month project developing a piece of software in an agile team. In our team, we created a digital whiteboard for visualising and orgainising development squads.'
-    },
-    {
-      text:
-        'These days you\'ll find me in the Digital Help team programming mainly in ReactJS and Ruby. I deal with frontend apps such as the <a href="https://www.sky.com/help">Help Homepage</a> and <a href="https://contactus.sky.com">Contact Us</a> as well as backend services and CMS\'s that power the help articles and diagnostic flows.'
-    }
-  ]
-};
 
 const projects = [
   {
@@ -102,10 +70,7 @@ const socialLinks = [
 export default () => (
   <div>
     <Header />
-    <div id="about" className="container">
-      <Section {...work} />
-      <Section {...education} />
-    </div>
+    <About />
     <Projects projects={projects} />
     <Contact />
     <Footer socialLinks={socialLinks} />
