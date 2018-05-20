@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <section className="about container">
     <div className="row">
-      <div className="col col-6 col-12-m">
+      <div className="col col-3 col-6-m">
         <h2>Work</h2>
         <p>
           I&#8217;m currently working as a software developer for{' '}
@@ -24,7 +24,7 @@ export default () => (
           flows.
         </p>
       </div>
-      <div className="col col-6 col-12-m">
+      <div className="col col-3 col-6-m">
         <h2>Education</h2>
         <p>
           I graduated from{' '}

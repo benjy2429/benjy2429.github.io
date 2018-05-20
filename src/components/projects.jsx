@@ -1,7 +1,7 @@
 import React from 'react';
 
 const renderProject = project => (
-  <article key={project.title} className="col col-4 col-6-t col-12-m">
+  <article key={project.title} className="col col-2 col-3-t col-6-m">
     <div className="project">
       <img
         className="project-image"

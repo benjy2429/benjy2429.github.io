@@ -4,7 +4,7 @@
  * Adapted from https://www.sitepoint.com/understanding-css-grid-systems/
  */
 
-$max-columns: 12;
+$max-columns: 6;
 $margin: 1.6%;
 $single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
 
