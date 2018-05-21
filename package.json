@@ -46,14 +46,15 @@
   },
   "scripts": {
     "dev": "run-p watch serve",
-    "serve": "http-server -c-1",
+    "serve": "http-server dist -c-1",
     "watch": "NODE_ENV=development webpack --watch --mode development",
     "build": "NODE_ENV=production webpack --mode production",
     "test": "jest",
     "lint-js": "eslint --ext js,jsx src",
     "lint-css": "stylelint src/styles",
     "lint": "run-s lint-js lint-css",
-    "precommit": "run-s lint test"
+    "precommit": "run-s lint test",
+    "deploy": "git subtree push --prefix dist origin master"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./test/setup.js"
