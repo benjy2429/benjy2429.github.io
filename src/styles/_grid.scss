@@ -1,74 +1,13 @@
-/*
- * Grid system
- *
- * Adapted from https://www.sitepoint.com/understanding-css-grid-systems/
- */
+$gutter: 20px;
 
-$max-columns: 6;
-$margin: 4%;
-$single-column-width: (100 - ($margin * ($max-columns - 1))) / $max-columns;
-
-.row,
-.col {
-  box-sizing: border-box;
+@mixin grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -#{$gutter};
+  margin-right: -#{$gutter};
 }
 
-.row::before,
-.row::after {
-  content: " ";
-  display: table;
-}
-
-.row::after {
-  clear: both;
-}
-
-.col {
-  position: relative;
-  float: left;
-  margin-bottom: $margin;
-  margin-right: $margin;
-}
-
-.row > .col:last-of-type {
-  margin-right: 0;
-}
-
-@for $i from 1 through $max-columns {
-
-  $column-width: ($single-column-width * $i) + ($margin * ($i - 1));
-
-  .col-#{$i} {
-    width: $column-width;
-  }
-
-  .col-push-#{$i} {
-    left: $column-width;
-  }
-
-  $nth-expression: $max-columns / $i;
-
-  .col-#{$i}:nth-of-type(#{$nth-expression}n) {
-    margin-right: 0;
-  }
-
-  @include breakpoint(desktop) {
-    .col-#{$i}-t {
-      width: $column-width;
-    }
-
-    .col-#{$i}-t:nth-of-type(#{$nth-expression}n) {
-      margin-right: 0;
-    }
-  }
-
-  @include breakpoint(mobile) {
-    .col-#{$i}-m {
-      width: $column-width;
-    }
-
-    .col-#{$i}-m:nth-of-type(#{$nth-expression}n) {
-      margin-right: 0;
-    }
-  }
+@mixin grid-item($cols) {
+  margin: $gutter;
+  width: calc((100% / #{$cols}) - (#{$gutter} * 2));
 }

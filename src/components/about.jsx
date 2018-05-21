@@ -2,8 +2,8 @@ import React from 'react';
 
 export default () => (
   <section className="about container">
-    <div className="row">
-      <div className="col col-3 col-6-m">
+    <div className="about-wrapper">
+      <div className="about-item">
         <h2 id="work">Work</h2>
         <p>
           I&#8217;m currently working as a software developer for{' '}
@@ -24,7 +24,7 @@ export default () => (
           flows.
         </p>
       </div>
-      <div className="col col-3 col-6-m">
+      <div className="about-item">
         <h2>Education</h2>
         <p>
           I graduated from{' '}

@@ -1,17 +1,8 @@
 .projects {
   .projects-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 40px;
     height: 100%;
 
-    @include breakpoint(desktop) {
-      grid-template-columns: repeat(2, auto);
-    }
-
-    @include breakpoint(mobile) {
-      grid-template-columns: auto;
-    }
+    @include grid;
   }
 
   .project {
@@ -20,6 +11,16 @@
     border: 1px solid $shadow-color;
     padding-bottom: 40px;
     position: relative;
+
+    @include grid-item(3);
+
+    @include breakpoint(desktop) {
+      @include grid-item(2);
+    }
+
+    @include breakpoint(mobile) {
+      @include grid-item(1);
+    }
   }
 
   .project-image {
