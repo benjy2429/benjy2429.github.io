@@ -25,7 +25,7 @@ export default () => (
         </p>
       </div>
       <div className="about-item">
-        <h2>Education</h2>
+        <h2 id="education">Education</h2>
         <p>
           I graduated from{' '}
           <a href="https://www.sheffield.ac.uk/">The University of Sheffield</a>{' '}

@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component renders correctly 1`] = `
+<section
+  className="contact"
+>
+  <div
+    className="container"
+  >
+    <h2
+      id="contact"
+    >
+      Contact
+    </h2>
+    <p>
+      I hope I’ve covered everything but if you have any questions or comments, drop me a message.
+    </p>
+    <form
+      action="https://www.enformed.io/6b8u88yv"
+      method="POST"
+    >
+      <input
+        name="*redirect"
+        type="hidden"
+        value="https://bencarr.co.uk/thanks"
+      />
+      <input
+        name="*subject"
+        type="hidden"
+        value="bencarr.co.uk Contact Form"
+      />
+      <input
+        name="*reply"
+        type="hidden"
+        value="email"
+      />
+      <input
+        name="*honeypot"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        type="text"
+      />
+      <label
+        htmlFor="contact-name"
+      >
+        Name
+      </label>
+      <input
+        id="contact-name"
+        name="name"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="contact-email"
+      >
+        Email
+      </label>
+      <input
+        id="contact-email"
+        name="email"
+        required={true}
+        type="email"
+      />
+      <label
+        htmlFor="contact-message"
+      >
+        Message
+      </label>
+      <textarea
+        id="contact-message"
+        name="message"
+        required={true}
+      />
+      <div
+        className="contact-submit-wrapper"
+      >
+        <input
+          className="btn"
+          type="submit"
+          value="Send"
+        />
+      </div>
+    </form>
+  </div>
+</section>
+`;

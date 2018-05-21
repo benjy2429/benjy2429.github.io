@@ -49,7 +49,9 @@ exports[`About component renders correctly 1`] = `
     <div
       className="about-item"
     >
-      <h2>
+      <h2
+        id="education"
+      >
         Education
       </h2>
       <p>
