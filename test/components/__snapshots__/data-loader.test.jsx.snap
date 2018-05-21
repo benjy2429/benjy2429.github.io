@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data loader component renders wrapped component with data 1`] = `
+<Component
+  bar="bar"
+  foo="foo"
+/>
+`;

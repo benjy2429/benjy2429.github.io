@@ -47,8 +47,8 @@
   "scripts": {
     "dev": "run-p watch serve",
     "serve": "webpack-dev-server",
-    "watch": "webpack --watch --mode development",
-    "build": "webpack --mode production",
+    "watch": "NODE_ENV=development webpack --watch --mode development",
+    "build": "NODE_ENV=production webpack --mode production",
     "test": "jest",
     "lint-js": "eslint --ext js,jsx src",
     "lint-css": "stylelint src/styles",

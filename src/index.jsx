@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/all.scss';
-import App from './components/app';
+import AppComponent from './components/app';
 
 // eslint-disable-next-line no-undef
-ReactDOM.render(<App />, document.getElementById('main'));
+ReactDOM.render(<AppComponent />, document.getElementById('main'));
