@@ -44,7 +44,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-js": "eslint --ext js,jsx src",
     "lint-css": "stylelint src/styles",
-    "precommit": "run-p lint-js lint-css"
+    "precommit": "run-p lint-js lint-css",
+    "deploy": "git subtree push --prefix dist origin master"
   },
   "repository": {
     "type": "git",
