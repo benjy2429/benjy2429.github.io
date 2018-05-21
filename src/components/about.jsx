@@ -4,7 +4,7 @@ export default () => (
   <section className="about container">
     <div className="row">
       <div className="col col-3 col-6-m">
-        <h2>Work</h2>
+        <h2 id="work">Work</h2>
         <p>
           I&#8217;m currently working as a software developer for{' '}
           <a href="https://www.sky.com">Sky</a> in Leeds.

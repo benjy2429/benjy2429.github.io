@@ -11,11 +11,6 @@ textarea {
   }
 }
 
-label,
-input[type="submit"], {
-  letter-spacing: $letter-spacing;
-}
-
 input:not([type="submit"]),
 textarea {
   height: 40px;
