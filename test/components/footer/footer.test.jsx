@@ -1,16 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { App } from '../../src/components/app';
+import Footer from '../../../src/components/footer/footer';
 
 const props = {
-  projects: 'projects',
-  footer: { footerProps: 'footer' }
+  menuLinks: 'menuLinks',
+  socialLinks: 'socialLinks'
 };
 
-describe('App component', () => {
+describe('Footer component', () => {
   it('renders correctly', () => {
-    const component = shallow(<App {...props} />);
+    const component = shallow(<Footer {...props} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 });

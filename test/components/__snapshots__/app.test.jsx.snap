@@ -9,7 +9,7 @@ exports[`App component renders correctly 1`] = `
   />
   <Component />
   <Component
-    socialLinks="socialLinks"
+    footerProps="footer"
   />
 </React.Fragment>
 `;
