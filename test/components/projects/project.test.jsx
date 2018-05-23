@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Projects from '../../src/components/projects';
+import Project from '../../../src/components/projects/project';
 
 const mockProject = {
   title: 'Demo project',
@@ -22,19 +22,19 @@ const mockProjectWithFile = {
   file: 'file.pdf'
 };
 
-describe('Projects component', () => {
-  it('renders projects', () => {
-    const component = shallow(<Projects projects={[mockProject]} />);
+describe('Project component', () => {
+  it('renders a project', () => {
+    const component = shallow(<Project {...mockProject} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 
-  it('renders projects with a link', () => {
-    const component = shallow(<Projects projects={[mockProjectWithLink]} />);
+  it('renders a project with a link', () => {
+    const component = shallow(<Project {...mockProjectWithLink} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 
-  it('renders projects with a file', () => {
-    const component = shallow(<Projects projects={[mockProjectWithFile]} />);
+  it('renders a project with a file', () => {
+    const component = shallow(<Project {...mockProjectWithFile} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 });

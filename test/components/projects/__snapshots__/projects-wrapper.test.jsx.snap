@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects wrapper component renders a list of projects 1`] = `
+<section
+  className="projects"
+>
+  <div
+    className="container"
+  >
+    <h2
+      id="projects"
+    >
+      Projects
+    </h2>
+    <p>
+      These are some of the projects I’ve worked on, both at university and in my spare time.
+    </p>
+    <div
+      className="projects-wrapper"
+    >
+      <Component
+        image="project-image.jpg"
+        key="Demo project"
+        text="Project description"
+        title="Demo project"
+      />
+    </div>
+  </div>
+</section>
+`;

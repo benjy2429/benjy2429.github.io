@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project component renders a project 1`] = `
+<article
+  className="project"
+>
+  <img
+    alt=""
+    className="project-image"
+    src="/assets/projects/project-image.jpg"
+  />
+  <div
+    className="project-content"
+  >
+    <h3
+      className="project-title"
+    >
+      Demo project
+    </h3>
+    <p
+      className="project-description"
+    >
+      Project description
+    </p>
+  </div>
+</article>
+`;
+
+exports[`Project component renders a project with a file 1`] = `
+<article
+  className="project"
+>
+  <img
+    alt=""
+    className="project-image"
+    src="/assets/projects/project-image.jpg"
+  />
+  <div
+    className="project-content"
+  >
+    <h3
+      className="project-title"
+    >
+      Demo project
+    </h3>
+    <p
+      className="project-description"
+    >
+      Project description
+    </p>
+    <a
+      className="project-link"
+      href="/download/file.pdf"
+    >
+      Download
+    </a>
+  </div>
+</article>
+`;
+
+exports[`Project component renders a project with a link 1`] = `
+<article
+  className="project"
+>
+  <img
+    alt=""
+    className="project-image"
+    src="/assets/projects/project-image.jpg"
+  />
+  <div
+    className="project-content"
+  >
+    <h3
+      className="project-title"
+    >
+      Demo project
+    </h3>
+    <p
+      className="project-description"
+    >
+      Project description
+    </p>
+    <a
+      className="project-link"
+      href="test.com"
+    >
+      Visit site
+    </a>
+  </div>
+</article>
+`;
