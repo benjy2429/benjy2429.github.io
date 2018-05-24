@@ -11,10 +11,22 @@ textarea {
   }
 }
 
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input:not([type="submit"]) {
+  height: 40px;
+}
+
+textarea {
+  height: 250px;
+}
+
 input:not([type="submit"]),
 textarea {
-  height: 40px;
-  width: 100%;
+  width: 60%;
   margin-bottom: 20px;
   border: 1px solid $shadow-color;
   box-shadow: none;
@@ -25,19 +37,35 @@ textarea {
   outline: none;
   padding: 10px;
   resize: vertical;
+  border-radius: 0;
+  -webkit-appearance: none;
+  display: block;
 
   &:focus {
     border-color: transparent;
     box-shadow: $shadow;
   }
+
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 
-textarea {
-  height: 250px;
-}
+input[type="submit"] {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid $shadow-color;
+  background-color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: $font-weight-normal;
+  margin: 20px 0;
+  transition:
+    border $transition-length,
+    box-shadow $transition-length;
 
-input:not([type=checkbox]):not([type=radio]),
-textarea {
-  border-radius: 0;
-  -webkit-appearance: none;
+  &:hover {
+    border-color: transparent;
+    box-shadow: $shadow;
+  }
 }

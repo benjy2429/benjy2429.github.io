@@ -32,9 +32,7 @@ export default () => (
         <label htmlFor="contact-message">Message</label>
         <textarea name="message" id="contact-message" required />
 
-        <div className="contact-submit-wrapper">
-          <input className="btn" type="submit" value="Send" />
-        </div>
+        <input type="submit" value="Send" />
       </form>
     </div>
   </section>
