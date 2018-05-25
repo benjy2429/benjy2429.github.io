@@ -60,6 +60,8 @@ input[type="submit"] {
   text-decoration: none;
   font-weight: $font-weight-normal;
   margin: 20px 0;
+  border-radius: 0;
+  -webkit-appearance: none;
   transition:
     border $transition-length,
     box-shadow $transition-length;

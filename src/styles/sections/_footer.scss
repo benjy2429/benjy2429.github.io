@@ -27,16 +27,21 @@
   }
 
   .footer-grid {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .footer-grid-left {
+    -ms-flex: 1;
     flex: 1;
     min-width: 25%;
   }
 
   .footer-grid-right {
+    -ms-flex: 2;
     flex: 2;
     text-align: right;
   }
