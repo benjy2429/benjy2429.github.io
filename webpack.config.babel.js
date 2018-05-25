@@ -34,9 +34,6 @@ export default {
     extensions: ['.js', '.jsx', '.scss']
   },
   mode: 'production',
-  devServer: {
-    host: '0.0.0.0'
-  },
   plugins: [
     new ExtractTextPlugin({ filename: 'main.css' }),
     new UglifyJsPlugin(),
