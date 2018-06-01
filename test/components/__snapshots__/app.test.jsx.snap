@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders correctly 1`] = `
-<React.Fragment>
+<div>
   <Component />
   <Component />
   <Component
@@ -11,5 +11,5 @@ exports[`App component renders correctly 1`] = `
   <Component
     footerProps="footer"
   />
-</React.Fragment>
+</div>
 `;

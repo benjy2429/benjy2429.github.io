@@ -9,7 +9,7 @@ const yearInWords = () => {
   return `${converter.toWords(first)}-${converter.toWords(second)}`;
 };
 
-export default ({ menuLinks, socialLinks }) => (
+export default ({ menuLinks = [], socialLinks = [] }) => (
   <footer className="footer">
     <div className="container">
       <p className="footer-title">
@@ -30,12 +30,12 @@ export default ({ menuLinks, socialLinks }) => (
         <div className="footer-grid-right">
           Copyright &copy; {yearInWords()}
           {false && (
-            <React.Fragment>
+            <div>
               <br />
               v1.1-alpha
               <br />
               <a href="/">Changelog</a>
-            </React.Fragment>
+            </div>
           )}
         </div>
       </div>

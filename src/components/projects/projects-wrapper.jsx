@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from './project';
 
-export default ({ projects }) => (
+export default ({ projects = [] }) => (
   <section className="projects">
     <div className="container">
       <h2 id="projects">Projects</h2>

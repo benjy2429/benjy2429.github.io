@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({ title, links }) => (
-  <React.Fragment>
+  <div>
     <h3 className="footer-links-title">{title}</h3>
     <ul className="footer-links">
       {links.map(({ name, href }) => (
@@ -12,5 +12,5 @@ export default ({ title, links }) => (
         </li>
       ))}
     </ul>
-  </React.Fragment>
+  </div>
 );

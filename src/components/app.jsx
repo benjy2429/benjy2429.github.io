@@ -7,13 +7,13 @@ import Contact from './contact';
 import Footer from './footer/footer';
 
 export const App = ({ projects, footer }) => (
-  <React.Fragment>
+  <div>
     <Header />
     <About />
     <ProjectsWrapper projects={projects} />
     <Contact />
     <Footer {...footer} />
-  </React.Fragment>
+  </div>
 );
 
 export default dataLoader(App);

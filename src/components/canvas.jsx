@@ -15,7 +15,6 @@ const randomPoint = (width, height) => {
 export default class Canvas extends React.Component {
   constructor(props) {
     super(props);
-    this.canvasRef = React.createRef();
     this.canvas = undefined;
     this.ctx = undefined;
     this.triangles = [];
@@ -24,7 +23,6 @@ export default class Canvas extends React.Component {
   }
 
   componentDidMount() {
-    this.canvas = this.canvasRef.current;
     this.ctx = this.canvas.getContext('2d');
 
     this.canvas.width = this.canvas.offsetWidth;
@@ -93,6 +91,13 @@ export default class Canvas extends React.Component {
   }
 
   render() {
-    return <canvas ref={this.canvasRef} id="background-canvas" />;
+    return (
+      <canvas
+        ref={ref => {
+          this.canvas = ref;
+        }}
+        id="background-canvas"
+      />
+    );
   }
 }
