@@ -12,6 +12,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "gatsby": "^1.9.267",
+    "gatsby-link": "^1.6.44",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.38",
