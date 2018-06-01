@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components//header';
-import About from '../components//about';
-import ProjectsWrapper from '../components//projects/projects-wrapper';
-import Contact from '../components//contact';
-import Footer from '../components//footer/footer';
+import Header from '../components/header';
+import About from '../components/about';
+import ProjectsWrapper from '../components/projects/projects-wrapper';
+import Contact from '../components/contact';
+import Footer from '../components/footer/footer';
 
 export const App = ({ projects, footer }) => (
   <div>
