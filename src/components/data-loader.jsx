@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data.json';
+import data from '../data/data.json';
 
 export default (WrappedComponent, _data = data) =>
   class extends React.Component {
