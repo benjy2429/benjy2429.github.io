@@ -7,10 +7,11 @@ import Footer from '../components/footer/footer';
 
 export default props => {
   const { projects, footer } = props.data.allDataJson.edges[0].node;
+  const markdownData = props.data.allMarkdownRemark.edges;
   return (
     <div>
       <Header />
-      <About />
+      <About data={markdownData} />
       <ProjectsWrapper projects={projects} />
       <Contact />
       <Footer {...footer} />
@@ -42,6 +43,16 @@ export const pageQuery = graphql`
               name
               href
             }
+          }
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
           }
         }
       }
