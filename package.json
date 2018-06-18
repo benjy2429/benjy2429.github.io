@@ -38,7 +38,7 @@
   },
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0",
-    "build": "gatsby build",
+    "build": "rm -rf public && gatsby build",
     "serve": "http-server public -c-1",
     "test": "jest",
     "lint-js": "eslint --ext js,jsx src",
