@@ -15,7 +15,7 @@
         "jest": true
     },
     "settings": {
-        "import/core-modules": [ "react" ]
+        "import/core-modules": [ "react", "core-js" ]
     },
     "globals": {
         "graphql": true

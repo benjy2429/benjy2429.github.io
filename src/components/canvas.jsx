@@ -1,3 +1,4 @@
+import 'core-js/fn/array/fill';
 import React from 'react';
 import Delaunator from 'delaunator';
 
