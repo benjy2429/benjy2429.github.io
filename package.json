@@ -4,6 +4,7 @@
   "description": "Personal website for Ben Carr",
   "private": true,
   "dependencies": {
+    "anchorate": "^1.2.3",
     "delaunator": "^2.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-15": "^1.0.5",

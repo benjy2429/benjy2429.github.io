@@ -44,19 +44,19 @@
     "menuLinks": [
       {
         "name": "Work",
-        "href": "#work"
+        "href": "/#work"
       },
       {
         "name": "Education",
-        "href": "#education"
+        "href": "/#education"
       },
       {
         "name": "Projects",
-        "href": "#projects"
+        "href": "/#projects"
       },
       {
         "name": "Contact",
-        "href": "#contact"
+        "href": "/#contact"
       }
     ],
     "socialLinks": [
@@ -76,19 +76,24 @@
   },
   "changelog": [
     {
-      "version": "v1.1.1",
+      "version": "v2.0.1",
       "date": "",
       "description": "Add changelog page"
     },
     {
-      "version": "v1.1.0",
+      "version": "v2.0.0",
       "date": "2018-06-18",
       "description": "Refactor from Jekyll to GatsbyJS"
     },
     {
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "date": "2018-05-25",
-      "description": "The great redesign release"
+      "description": "The Great Redesign release"
+    },
+    {
+      "version": "v1.0.0",
+      "date": "2017-04-19",
+      "description": "Initial release"
     }
   ]
 }

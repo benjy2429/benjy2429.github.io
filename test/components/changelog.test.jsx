@@ -43,6 +43,7 @@ describe('Changelog component', () => {
         items={[
           {
             version: 'v1',
+            date: '',
             description: 'test'
           }
         ]}

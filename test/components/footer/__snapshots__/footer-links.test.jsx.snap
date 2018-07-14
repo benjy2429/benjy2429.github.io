@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component renders a list of links 1`] = `
+exports[`Footer component renders a list of external links 1`] = `
 <div>
   <h3
     className="footer-links-title"
@@ -15,10 +15,34 @@ exports[`Footer component renders a list of links 1`] = `
     >
       <a
         className="link-light"
-        href="example.test"
+        href="https://test.com"
       >
         Link 1
       </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Footer component renders a list of internal links 1`] = `
+<div>
+  <h3
+    className="footer-links-title"
+  >
+    Menu
+  </h3>
+  <ul
+    className="footer-links"
+  >
+    <li
+      key="Link 1"
+    >
+      <GatsbyLink
+        className="link-light"
+        to="/test"
+      >
+        Link 1
+      </GatsbyLink>
     </li>
   </ul>
 </div>

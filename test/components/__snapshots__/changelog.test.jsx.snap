@@ -71,6 +71,12 @@ exports[`Changelog component renders correctly without dates 1`] = `
       >
         v1
       </span>
+      <br />
+      <span
+        className="changelog-date"
+      >
+        TBC
+      </span>
     </p>
     <p
       className="changelog-description"

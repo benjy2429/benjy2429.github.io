@@ -11,14 +11,16 @@ export default ({ items = [] }) => (
         <div className="changelog-item" key={version}>
           <p>
             <span className="changelog-version">{version}</span>
-            {date && <br />}
-            {date && (
+            <br />
+            {parsedDate.isValid() ? (
               <span
                 className="changelog-date"
                 title={parsedDate.format('Do MMM YYYY')}
               >
                 {parsedDate.fromNow()}
               </span>
+            ) : (
+              <span className="changelog-date">TBC</span>
             )}
           </p>
           <p className="changelog-description">{description}</p>
