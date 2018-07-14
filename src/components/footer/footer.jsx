@@ -32,13 +32,15 @@ export default ({ menuLinks = [], socialLinks = [], changelog }) => (
         </div>
 
         <div className="footer-grid-right">
-          Copyright &copy; {yearInWords()}
-          <br />
-          {latestVersion(changelog)}
-          <br />
-          <Link to="/changelog" className="link-light">
-            Changelog
-          </Link>
+          <p>Copyright &copy; {yearInWords()}</p>
+
+          <p>
+            {latestVersion(changelog)}
+            <br />
+            <Link to="/changelog" className="link-light">
+              Changelog
+            </Link>
+          </p>
         </div>
       </div>
     </div>
