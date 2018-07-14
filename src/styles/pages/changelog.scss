@@ -1,0 +1,18 @@
+#changelog {
+  .changelog-item {
+    margin: 30px 0;
+    border-bottom: 1px solid $shadow-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .changelog-version {
+      font-weight: 400;
+    }
+
+    .changelog-date {
+      color: $text-color-light;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import converter from 'number-to-words';
+import Link from 'gatsby-link';
 import FooterLinks from './footer-links';
 
 const yearInWords = () => {
@@ -9,7 +10,10 @@ const yearInWords = () => {
   return `${converter.toWords(first)}-${converter.toWords(second)}`;
 };
 
-export default ({ menuLinks = [], socialLinks = [] }) => (
+const latestVersion = (changelog = []) =>
+  changelog.length ? changelog[0].version : undefined;
+
+export default ({ menuLinks = [], socialLinks = [], changelog }) => (
   <footer className="footer">
     <div className="container">
       <p className="footer-title">
@@ -29,14 +33,12 @@ export default ({ menuLinks = [], socialLinks = [] }) => (
 
         <div className="footer-grid-right">
           Copyright &copy; {yearInWords()}
-          {false && (
-            <div>
-              <br />
-              v1.1-alpha
-              <br />
-              <a href="/">Changelog</a>
-            </div>
-          )}
+          <br />
+          {latestVersion(changelog)}
+          <br />
+          <Link to="/changelog" className="link-light">
+            Changelog
+          </Link>
         </div>
       </div>
     </div>

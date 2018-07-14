@@ -38,6 +38,15 @@ exports[`Footer component renders correctly 1`] = `
       >
         Copyright © 
         twenty-eighteen
+        <br />
+        v1
+        <br />
+        <GatsbyLink
+          className="link-light"
+          to="/changelog"
+        >
+          Changelog
+        </GatsbyLink>
       </div>
     </div>
   </div>

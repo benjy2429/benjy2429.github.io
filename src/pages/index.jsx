@@ -6,7 +6,7 @@ import Contact from '../components/contact';
 import Footer from '../components/footer/footer';
 
 export default props => {
-  const { projects, footer } = props.data.allDataJson.edges[0].node;
+  const { projects, changelog, footer } = props.data.allDataJson.edges[0].node;
   const markdownData = props.data.allMarkdownRemark.edges;
   return (
     <div>
@@ -14,7 +14,7 @@ export default props => {
       <About data={markdownData} />
       <ProjectsWrapper projects={projects} />
       <Contact />
-      <Footer {...footer} />
+      <Footer {...footer} changelog={changelog} />
     </div>
   );
 };
@@ -33,6 +33,9 @@ export const pageQuery = graphql`
               text
               href
             }
+          }
+          changelog {
+            version
           }
           footer {
             menuLinks {

@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Changelog component renders correctly with items 1`] = `
+<div>
+  <h1>
+    Changelog
+  </h1>
+  <div
+    className="changelog-item"
+    key="v2"
+  >
+    <p>
+      <span
+        className="changelog-version"
+      >
+        v2
+      </span>
+      <br />
+      <span
+        className="changelog-date"
+        title="25th Dec 2000"
+      >
+        a few seconds ago
+      </span>
+    </p>
+    <p
+      className="changelog-description"
+    >
+      v2 description
+    </p>
+  </div>
+  <div
+    className="changelog-item"
+    key="v1"
+  >
+    <p>
+      <span
+        className="changelog-version"
+      >
+        v1
+      </span>
+      <br />
+      <span
+        className="changelog-date"
+        title="1st Jan 1999"
+      >
+        2 years ago
+      </span>
+    </p>
+    <p
+      className="changelog-description"
+    >
+      v1 description
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Changelog component renders correctly without dates 1`] = `
+<div>
+  <h1>
+    Changelog
+  </h1>
+  <div
+    className="changelog-item"
+    key="v1"
+  >
+    <p>
+      <span
+        className="changelog-version"
+      >
+        v1
+      </span>
+    </p>
+    <p
+      className="changelog-description"
+    >
+      test
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Changelog component renders correctly without items 1`] = `
+<div>
+  <h1>
+    Changelog
+  </h1>
+</div>
+`;

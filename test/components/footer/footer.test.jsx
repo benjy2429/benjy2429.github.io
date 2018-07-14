@@ -5,7 +5,8 @@ import Footer from '../../../src/components/footer/footer';
 
 const props = {
   menuLinks: 'menuLinks',
-  socialLinks: 'socialLinks'
+  socialLinks: 'socialLinks',
+  changelog: [{ version: 'v1' }]
 };
 
 describe('Footer component', () => {
