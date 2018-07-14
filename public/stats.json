@@ -5,40 +5,48 @@
       "path----84ce9446975f107cf879.js.map"
     ],
     "component---src-pages-thanks-jsx": [
-      "component---src-pages-thanks-jsx-dd36eb487660664a0ee9.js",
-      "component---src-pages-thanks-jsx-dd36eb487660664a0ee9.js.map"
+      "component---src-pages-thanks-jsx-5b703951ab1d68f21301.js",
+      "component---src-pages-thanks-jsx-5b703951ab1d68f21301.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-5d9bfbfe5dfc17a76e3c.js",
       "component---src-layouts-index-jsx-5d9bfbfe5dfc17a76e3c.js.map"
     ],
     "path---index": [
-      "path---index-b42e0d5680b7f7c50c74.js",
-      "path---index-b42e0d5680b7f7c50c74.js.map"
+      "path---index-a9e8e5bac1614c990be7.js",
+      "path---index-a9e8e5bac1614c990be7.js.map"
+    ],
+    "component---src-pages-changelog-jsx": [
+      "component---src-pages-changelog-jsx-b56321a9115f5b10657b.js",
+      "component---src-pages-changelog-jsx-b56321a9115f5b10657b.js.map"
     ],
     "commons": [
-      "commons-1c470a546879368fe84f.js",
-      "commons-1c470a546879368fe84f.js.map"
+      "commons-9281729ec38cf2327de3.js",
+      "commons-9281729ec38cf2327de3.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-jsx": [
-      "component---src-pages-404-jsx-3eb534aa7c38d969ecd1.js",
-      "component---src-pages-404-jsx-3eb534aa7c38d969ecd1.js.map"
+      "component---src-pages-404-jsx-0795288a8f035d7e64bf.js",
+      "component---src-pages-404-jsx-0795288a8f035d7e64bf.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-eff1d1dc604d90127eff.js",
-      "component---src-pages-index-jsx-eff1d1dc604d90127eff.js.map"
+      "component---src-pages-index-jsx-c52cadc8dfe5f57d33a1.js",
+      "component---src-pages-index-jsx-c52cadc8dfe5f57d33a1.js.map"
+    ],
+    "path---changelog": [
+      "path---changelog-e4d79af4e4b0187e344a.js",
+      "path---changelog-e4d79af4e4b0187e344a.js.map"
     ],
     "path---thanks": [
       "path---thanks-a0e39f21c11f6a62c5ab.js",
       "path---thanks-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-275e0139bbcf77fdb705.js",
-      "app-275e0139bbcf77fdb705.js.map"
+      "app-a90370b0afc6925287cf.js",
+      "app-a90370b0afc6925287cf.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
