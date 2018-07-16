@@ -41,7 +41,7 @@
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0",
     "build": "rm -rf public && gatsby build",
-    "serve": "http-server public -c-1",
+    "serve": "http-server public -c-1 -p 8000",
     "test": "jest",
     "lint-js": "eslint --ext js,jsx src",
     "lint-css": "stylelint src/styles",

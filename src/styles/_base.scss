@@ -26,12 +26,12 @@ h2 {
 p {
   font-size: $font-size-body;
   font-weight: $font-weight-light;
-  line-height: 30px;
+  line-height: $line-height;
   margin-bottom: 30px;
 
   @include breakpoint(mobile) {
     font-size: $font-size-body-mobile;
-    line-height: 26px;
+    line-height: $line-height-mobile;
   }
 }
 

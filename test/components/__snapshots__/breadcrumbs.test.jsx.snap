@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs component does not render with no crumbs 1`] = `""`;
+
+exports[`Breadcrumbs component renders crumbs with links 1`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li
+    className="breadcrumb"
+  >
+    <GatsbyLink
+      to="/"
+    >
+      Home
+    </GatsbyLink>
+  </li>
+  <li
+    className="breadcrumb"
+    key="crumb-Crumb"
+  >
+    <GatsbyLink
+      to="/crumb"
+    >
+      Crumb
+    </GatsbyLink>
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumbs component renders crumbs without links 1`] = `
+<ul
+  className="breadcrumbs"
+>
+  <li
+    className="breadcrumb"
+  >
+    <GatsbyLink
+      to="/"
+    >
+      Home
+    </GatsbyLink>
+  </li>
+  <li
+    className="breadcrumb"
+    key="crumb-Crumb"
+  >
+    Crumb
+  </li>
+</ul>
+`;
