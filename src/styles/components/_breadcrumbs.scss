@@ -3,11 +3,12 @@ $chevron-size: 6px;
 .breadcrumbs {
   list-style: none;
   color: $text-color-light;
+  margin-bottom: 40px;
 
   .breadcrumb {
     display: inline-block;
     position: relative;
-    padding: 0 20px 40px;
+    padding: 0 20px;
     font-size: $font-size-body;
     font-weight: $font-weight-light;
 
