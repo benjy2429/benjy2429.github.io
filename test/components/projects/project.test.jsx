@@ -22,6 +22,11 @@ const mockProjectWithFile = {
   file: 'file.pdf'
 };
 
+const mockProjectWithTags = {
+  ...mockProject,
+  tags: ['JavaScript', 'ReactJS']
+};
+
 describe('Project component', () => {
   it('renders a project', () => {
     const component = shallow(<Project {...mockProject} />);
@@ -35,6 +40,11 @@ describe('Project component', () => {
 
   it('renders a project with a file', () => {
     const component = shallow(<Project {...mockProjectWithFile} />);
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it('renders a project with tags', () => {
+    const component = shallow(<Project {...mockProjectWithTags} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 });

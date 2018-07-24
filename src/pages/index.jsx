@@ -29,6 +29,7 @@ export const pageQuery = graphql`
             image
             text
             file
+            tags
             link {
               text
               href

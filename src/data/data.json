@@ -1,24 +1,27 @@
 {
   "projects": [
     {
-      "title": "CircleCI Build Monitor",
-      "image": "circleci.png",
-      "text": "A simple Ruby on Rails build monitor for CircleCI projects.",
+      "title": "CC Build Monitor",
+      "image": "cc-build-monitor.png",
+      "text": "A Koa/ReactJS app to monitor the status of continuous integration builds.",
       "link": {
         "text": "View on GitHub",
-        "href": "https://github.com/benjy2429/circleci-build-monitor"
-      }
+        "href": "https://github.com/benjy2429/cc-build-monitor"
+      },
+      "tags": ["JavaScript", "ReactJS"]
     },
     {
       "title": "Digital Whiteboard",
       "image": "whiteboard.png",
-      "text": "A digital whiteboard built with ReactJS to manage development squads and employees."
+      "text": "A digital whiteboard built with ReactJS to manage development squads and employees.",
+      "tags": ["JavaScript", "ReactJS"]
     },
     {
       "title": "Dissertation",
       "image": "dissertation.png",
       "text": "A real-time shadow puppet storytelling application using a Kinect sensor and C++.",
-      "file": "Dissertation_Ben_Carr.pdf"
+      "file": "Dissertation_Ben_Carr.pdf",
+      "tags": ["C++", "Kinect", "Cinder"]
     },
     {
       "title": "Social Sheffield",
@@ -27,17 +30,20 @@
       "link": {
         "text": "Visit site",
         "href": "http://www.socialsheffield.net"
-      }
+      },
+      "tags": ["Ruby", "Ruby on Rails"]
     },
     {
       "title": "Academicus",
       "image": "academicus.png",
-      "text": "A Swift app that allows students to track their academic progress and achievements."
+      "text": "A Swift app that allows students to track their academic progress and achievements.",
+      "tags": ["Objective-C"]
     },
     {
       "title": "London Power Tunnels",
       "image": "costain.png",
-      "text": "A system built for engineering firm Costain to monitor trains within underground tunnels."
+      "text": "A system built for engineering firm Costain to monitor trains within underground tunnels.",
+      "tags": ["Ruby", "Ruby on Rails"]
     }
   ],
   "footer": {

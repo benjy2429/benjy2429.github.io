@@ -9,7 +9,7 @@
     background-color: #fff;
     overflow: hidden;
     border: 1px solid $shadow-color;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     position: relative;
 
     @include grid-item(3);
@@ -43,5 +43,20 @@
     bottom: 0;
     left: 0;
     margin: 20px;
+  }
+
+  $tag-size: 26px;
+
+  .project-tag {
+    height: $tag-size;
+    line-height: $tag-size;
+    padding: 0 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: $tag-size / 2;
+    display: inline-block;
+    border: 1px solid $shadow-color;
+    font-size: 14px;
+    font-weight: $font-weight-light;
   }
 }

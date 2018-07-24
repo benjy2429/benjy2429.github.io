@@ -89,3 +89,41 @@ exports[`Project component renders a project with a link 1`] = `
   </div>
 </article>
 `;
+
+exports[`Project component renders a project with tags 1`] = `
+<article
+  className="project"
+>
+  <img
+    alt=""
+    className="project-image"
+    src="/assets/projects/project-image.jpg"
+  />
+  <div
+    className="project-content"
+  >
+    <h3
+      className="project-title"
+    >
+      Demo project
+    </h3>
+    <div
+      className="project-tag"
+      key="Demo project-JavaScript"
+    >
+      JavaScript
+    </div>
+    <div
+      className="project-tag"
+      key="Demo project-ReactJS"
+    >
+      ReactJS
+    </div>
+    <p
+      className="project-description"
+    >
+      Project description
+    </p>
+  </div>
+</article>
+`;
