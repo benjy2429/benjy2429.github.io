@@ -13,7 +13,7 @@ export default () => (
         <input
           type="hidden"
           name="*redirect"
-          value="https://bencarr.co.uk/thanks"
+          value="https://www.bencarr.co.uk/thanks"
         />
         <input
           type="hidden"
