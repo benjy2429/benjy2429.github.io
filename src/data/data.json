@@ -82,6 +82,11 @@
   },
   "changelog": [
     {
+      "version": "v2.3.0",
+      "date": "2018-07-28",
+      "description": "Add language tags to projects"
+    },
+    {
       "version": "v2.2.0",
       "date": "2018-07-16",
       "description": "Create breadcrumbs component"
