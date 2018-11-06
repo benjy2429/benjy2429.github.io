@@ -82,6 +82,11 @@
   },
   "changelog": [
     {
+      "version": "v2.3.1",
+      "date": "2018-11-06",
+      "description": "Bug fix for the contact form"
+    },
+    {
       "version": "v2.3.0",
       "date": "2018-07-28",
       "description": "Add language tags to projects"
