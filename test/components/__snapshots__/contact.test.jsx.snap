@@ -36,12 +36,7 @@ exports[`Contact component renders correctly 1`] = `
       />
       <input
         name="*honeypot"
-        style={
-          Object {
-            "display": "none",
-          }
-        }
-        type="text"
+        type="hidden"
       />
       <label
         htmlFor="contact-name"

@@ -21,7 +21,7 @@ export default () => (
           value="bencarr.co.uk Contact Form"
         />
         <input type="hidden" name="*reply" value="email" />
-        <input type="text" name="*honeypot" style={{ display: 'none' }} />
+        <input type="hidden" name="*honeypot" />
 
         <label htmlFor="contact-name">Name</label>
         <input type="text" name="name" id="contact-name" required />
