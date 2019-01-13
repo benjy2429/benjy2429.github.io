@@ -49,38 +49,47 @@ describe('Contact component', () => {
   });
 
   describe('with a successful response', () => {
-    it('redirects to the success page', async () => {
+    it('redirects to the success page', () => {
       const component = shallow(<Contact />);
       component.setState(validState);
-      await component.instance().submitForm(mockEvent);
-
-      expect(window.location.assign).toHaveBeenCalledWith('/thanks');
+      component
+        .instance()
+        .submitForm(mockEvent)
+        .then(() => {
+          expect(window.location.assign).toHaveBeenCalledWith('/thanks');
+        });
     });
   });
 
   describe('with a successful response', () => {
-    it('redirects to the error page', async () => {
+    it('redirects to the error page', () => {
       window.fetch.mockImplementation(() =>
         Promise.resolve({ json: () => Promise.resolve({ status: 500 }) })
       );
 
       const component = shallow(<Contact />);
       component.setState(validState);
-      await component.instance().submitForm(mockEvent);
-
-      expect(window.location.assign).toHaveBeenCalledWith('/formerror');
+      component
+        .instance()
+        .submitForm(mockEvent)
+        .then(() => {
+          expect(window.location.assign).toHaveBeenCalledWith('/formerror');
+        });
     });
   });
 
   describe('with a failed response', () => {
-    it('redirects to the error page', async () => {
+    it('redirects to the error page', () => {
       window.fetch.mockImplementation(() => Promise.reject());
 
       const component = shallow(<Contact />);
       component.setState(validState);
-      await component.instance().submitForm(mockEvent);
-
-      expect(window.location.assign).toHaveBeenCalledWith('/formerror');
+      component
+        .instance()
+        .submitForm(mockEvent)
+        .then(() => {
+          expect(window.location.assign).toHaveBeenCalledWith('/formerror');
+        });
     });
   });
 });

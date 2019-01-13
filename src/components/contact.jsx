@@ -74,13 +74,13 @@ export default class extends React.Component {
     });
   }
 
-  async submitForm(event) {
+  submitForm(event) {
     event.preventDefault();
 
     this.validateFormData();
 
     if (this.hasValidationErrors) {
-      return;
+      return false;
     }
 
     const formData = {
@@ -92,20 +92,19 @@ export default class extends React.Component {
       message: this.state.message.value
     };
 
-    try {
-      const response = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-      const { status } = await response.json();
-      window.location.assign(status === 200 ? REDIRECT_PATH : ERROR_PATH);
-    } catch (e) {
-      window.location.assign(ERROR_PATH);
-    }
+    return fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+      .then(response => response.json())
+      .then(({ status }) => {
+        window.location.assign(status === 200 ? REDIRECT_PATH : ERROR_PATH);
+      })
+      .catch(() => window.location.assign(ERROR_PATH));
   }
 
   render() {
