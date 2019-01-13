@@ -49,6 +49,11 @@ textarea {
   @include breakpoint(mobile) {
     width: 100%;
   }
+
+  &.invalid {
+    border-color: $error-color;
+    margin-bottom: 10px;
+  }
 }
 
 input[type="submit"] {
@@ -70,4 +75,10 @@ input[type="submit"] {
     border-color: transparent;
     box-shadow: $shadow;
   }
+}
+
+.validation-error {
+  color: $error-color;
+  margin-bottom: 20px;
+  font-style: italic;
 }

@@ -7,7 +7,7 @@ exports[`App component renders correctly 1`] = `
   <Component
     projects="projects"
   />
-  <Component />
+  <_class />
   <Component
     footerProps="footer"
   />

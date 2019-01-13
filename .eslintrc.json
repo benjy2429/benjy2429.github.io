@@ -19,6 +19,8 @@
         "import/core-modules": [ "react", "core-js" ]
     },
     "globals": {
-        "graphql": true
+        "graphql": true,
+        "fetch": true,
+        "window": true
     }
 }

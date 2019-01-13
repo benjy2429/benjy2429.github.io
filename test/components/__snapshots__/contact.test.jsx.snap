@@ -16,26 +16,16 @@ exports[`Contact component renders correctly 1`] = `
       I hope I’ve covered everything but if you have any questions or comments, drop me a message.
     </p>
     <form
-      action="https://www.enformed.io/6b8u88yv"
-      method="POST"
+      onSubmit={[Function]}
     >
-      <input
-        name="*redirect"
-        type="hidden"
-        value="https://www.bencarr.co.uk/thanks"
-      />
-      <input
-        name="*subject"
-        type="hidden"
-        value="bencarr.co.uk Contact Form"
-      />
       <input
         name="*reply"
         type="hidden"
         value="email"
       />
       <input
-        name="*honeypot"
+        name="honeypot"
+        onChange={[Function]}
         type="hidden"
       />
       <label
@@ -44,8 +34,10 @@ exports[`Contact component renders correctly 1`] = `
         Name
       </label>
       <input
+        className=""
         id="contact-name"
         name="name"
+        onChange={[Function]}
         required={true}
         type="text"
       />
@@ -55,8 +47,10 @@ exports[`Contact component renders correctly 1`] = `
         Email
       </label>
       <input
+        className=""
         id="contact-email"
         name="email"
+        onChange={[Function]}
         required={true}
         type="email"
       />
@@ -66,8 +60,10 @@ exports[`Contact component renders correctly 1`] = `
         Message
       </label>
       <textarea
+        className=""
         id="contact-message"
         name="message"
+        onChange={[Function]}
         required={true}
       />
       <input
