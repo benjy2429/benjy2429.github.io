@@ -121,7 +121,6 @@ export default class extends React.Component {
           </p>
 
           <form onSubmit={this.submitForm}>
-            <input type="hidden" name="*reply" value="email" />
             <input
               type="hidden"
               name="honeypot"

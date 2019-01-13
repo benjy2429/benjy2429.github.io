@@ -19,11 +19,6 @@ exports[`Contact component renders correctly 1`] = `
       onSubmit={[Function]}
     >
       <input
-        name="*reply"
-        type="hidden"
-        value="email"
-      />
-      <input
         name="honeypot"
         onChange={[Function]}
         type="hidden"
