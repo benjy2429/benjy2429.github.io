@@ -102,12 +102,9 @@ export default class extends React.Component {
         body: JSON.stringify(formData)
       });
       const { status } = await response.json();
-
-      if (status === 200) {
-        window.location.href = status === 200 ? REDIRECT_PATH : ERROR_PATH;
-      }
+      window.location.assign(status === 200 ? REDIRECT_PATH : ERROR_PATH);
     } catch (e) {
-      window.location.href = ERROR_PATH;
+      window.location.assign(ERROR_PATH);
     }
   }
 
