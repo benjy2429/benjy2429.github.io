@@ -82,7 +82,7 @@
   },
   "changelog": [
     {
-      "version": "v2.5.0",
+      "version": "v2.5.1",
       "date": "2022-02-16",
       "description": "Upgrade Gatsby"
     },
