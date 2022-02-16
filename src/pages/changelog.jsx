@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+
 import Changelog from '../components/changelog';
 import Footer from '../components/footer/footer';
 import Breadcrumbs from '../components/breadcrumbs';

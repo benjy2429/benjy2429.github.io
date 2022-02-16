@@ -37,12 +37,12 @@ exports[`Footer component renders a list of internal links 1`] = `
     <li
       key="Link 1"
     >
-      <GatsbyLink
+      <[object Object]
         className="link-light"
         to="/test"
       >
         Link 1
-      </GatsbyLink>
+      </[object Object]>
     </li>
   </ul>
 </div>

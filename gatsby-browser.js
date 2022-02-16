@@ -1,5 +1,7 @@
 import { anchorate } from 'anchorate';
 
-exports.onRouteUpdate = () => {
+const onRouteUpdate = () => {
   anchorate();
 };
+
+export { onRouteUpdate };

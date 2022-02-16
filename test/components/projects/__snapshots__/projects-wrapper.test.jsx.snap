@@ -18,7 +18,7 @@ exports[`Projects wrapper component renders a list of projects 1`] = `
     <div
       className="projects-wrapper"
     >
-      <Component
+      <_default
         image="project-image.jpg"
         key="Demo project"
         text="Project description"

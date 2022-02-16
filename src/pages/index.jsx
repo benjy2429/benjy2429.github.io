@@ -1,4 +1,7 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+
+import Layout from '../components/layout';
 import Header from '../components/header';
 import About from '../components/about';
 import ProjectsWrapper from '../components/projects/projects-wrapper';
@@ -9,13 +12,13 @@ export default props => {
   const { projects, changelog, footer } = props.data.allDataJson.edges[0].node;
   const markdownData = props.data.allMarkdownRemark.edges;
   return (
-    <div>
+    <Layout>
       <Header />
       <About data={markdownData} />
       <ProjectsWrapper projects={projects} />
       <Contact />
       <Footer {...footer} changelog={changelog} />
-    </div>
+    </Layout>
   );
 };
 

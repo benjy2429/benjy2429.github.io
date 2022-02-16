@@ -9,21 +9,21 @@ exports[`Breadcrumbs component renders crumbs with links 1`] = `
   <li
     className="breadcrumb"
   >
-    <GatsbyLink
+    <[object Object]
       to="/"
     >
       Home
-    </GatsbyLink>
+    </[object Object]>
   </li>
   <li
     className="breadcrumb"
     key="crumb-Crumb"
   >
-    <GatsbyLink
+    <[object Object]
       to="/crumb"
     >
       Crumb
-    </GatsbyLink>
+    </[object Object]>
   </li>
 </ul>
 `;
@@ -35,11 +35,11 @@ exports[`Breadcrumbs component renders crumbs without links 1`] = `
   <li
     className="breadcrumb"
   >
-    <GatsbyLink
+    <[object Object]
       to="/"
     >
       Home
-    </GatsbyLink>
+    </[object Object]>
   </li>
   <li
     className="breadcrumb"

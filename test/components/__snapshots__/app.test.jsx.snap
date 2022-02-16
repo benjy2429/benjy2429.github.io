@@ -2,13 +2,13 @@
 
 exports[`App component renders correctly 1`] = `
 <div>
-  <Component />
+  <_default />
   <About />
-  <Component
+  <_default
     projects="projects"
   />
-  <_class />
-  <Component
+  <_default />
+  <_default
     footerProps="footer"
   />
 </div>
