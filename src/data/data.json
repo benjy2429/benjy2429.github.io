@@ -82,6 +82,11 @@
   },
   "changelog": [
     {
+      "version": "v2.5.0",
+      "date": "2022-02-16",
+      "description": "Upgrade Gatsby"
+    },
+    {
       "version": "v2.4.0",
       "date": "2019-01-13",
       "description": "Improve contact form validation and error handling"
