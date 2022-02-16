@@ -13,7 +13,6 @@ if (process.env.NODE_ENV === `production`) {
 export default class HTML extends React.Component {
   render() {
     let css;
-    let analytics;
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
@@ -21,7 +20,6 @@ export default class HTML extends React.Component {
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
       );
-      analytics = <script src="/assets/analytics.js" async></script>;
     }
     return (
       <html {...this.props.htmlAttributes}>
@@ -49,7 +47,6 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          {analytics}
         </body>
       </html>
     );
